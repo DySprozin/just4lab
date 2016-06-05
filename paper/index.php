@@ -90,22 +90,6 @@ include ROOT . 'inc/header_common.htm';
    </div>
   </td>
   <td class="border_right">
-  <img src="/img/positive.gif" alt="Позитивые новости" class="img_right_menu">
-  <div class="border_right_menu2line">
-   <a class="border_right_link" href="#/news/"  style="color: gray;" onclick="alert('В разработке, скоро появится ;)');">Новости мира<br>
-   от  01.09.2012</a>
-  </div>
-  <br class="break">
-  <img src="/img/vk.gif" alt="Анабот Вконтакте" class="img_right_menu">
-  <div class="border_right_menu">
-   <a class="border_right_link" href="http://vkontakte.ru/club758006">Мы Вконтакте</a>
-  </div>
-  <br class="break">
-  <img src="/img/market.gif" alt="Жми скорей!" class="img_right_menu">
-  <div class="border_right_menu">
-   <a class="border_right_link" href="http://natribu.org/?IOPu8e-u5OAg8OXq6+Ds7uTg8uXr6CElIMDt4OHu8iDv6+Xi4PL8IPXu8uXrIO3gIOLg+Ogg7-Dl5Ovu5uXt6P8g7iDw5err4OzlLiUg7eUg5O7t6Ozg6fLlIMDt4OHu8iDx4u7o7Ogg7-Dl5Ovu5uXt6P-s6C4">Рекламодателям</a>
-  </div>
-  <br class="break">
   <img src="/img/bug.gif" alt="Единственный баг на сайте" title="Единственный баг на сайте" class="img_right_menu">
   <div class="border_right_menu2line">
    <a class="border_right_link" href="/forhack.php">Кулхацкерам<br>посвещается...</a><br>

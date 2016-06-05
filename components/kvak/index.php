@@ -76,7 +76,7 @@ elseif (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
    $f[$kvak] = new Cls_Kvak_Items;
    $f[$kvak]->f = $kvak;
   }
-  
+/*  
   $f[13]->img_src = '/kvak/img/muctr.gif';
   $f[13]->img_alt = 'РХТУ';
   $f[13]->title = 'О нашем РХТУ';
@@ -129,12 +129,7 @@ elseif (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
   $f[23]->chmod['Guest'] = '';
   $f[23]->chmod['Student'] = '';
   
-  $f[11]->img_src = '/kvak/img/bug.gif';
-  $f[11]->img_alt = '[A]';
-  $f[11]->title = 'Админский';
-  $f[11]->chmod['Guest'] = '';
-  $f[11]->chmod['Student'] = '';
-  $f[11]->chmod['SuperModerator'] = '';
+
 
   $f[21]->title = 'Учебные статьи';
   $f[1]->title = 'Закон, учеба, жизнь ';
@@ -144,6 +139,15 @@ elseif (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
   $f[3]->title = 'Не в шутку, не всерьез ';
   $f[4]->title = 'Новости университета ';
   $f[8]->title = 'Советы студентам ';
+*/
+
+  $f[11]->img_src = '/kvak/img/bug.gif';
+  $f[11]->img_alt = '[A]';
+  $f[11]->title = 'Админский';
+  $f[11]->chmod['Guest'] = '';
+  $f[11]->chmod['Student'] = '';
+  $f[11]->chmod['SuperModerator'] = '';
+
 
   $f[30]->title = 'Блог';
   $f[30]->img_src = '/kvak/img/blog.gif';

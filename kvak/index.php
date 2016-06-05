@@ -1,8 +1,10 @@
 <?php
 define ('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
 include ROOT . 'conf/main_conf.php';
+
 include ROOT . 'Cls/Cls_Kvak.php';
 include ROOT . 'components/kvak/index.php';
+
 include ROOT . 'inc/header_common.htm';
 
 
@@ -27,6 +29,7 @@ include ROOT . 'inc/header_common.htm';
   <td class="<?php echo $main_css;?>_left">
    <hr>
    <div class="actual_body paper_body">
+
 <?php eval($kvak_body); ?>
    </div>
   </td>
@@ -35,17 +38,8 @@ include ROOT . 'inc/header_common.htm';
 
 <?php
  if ($main_css == "border") {
-  echo $f[13]->kvak();
-  echo $f[16]->kvak();
-  echo $f[10]->kvak();
-  echo $f[19]->kvak();
-  echo $f[20]->kvak();
-  echo $f[14]->kvak();
-  echo $f[22]->kvak();
-  echo $f[12]->kvak();
-  echo $f[23]->kvak();
-  echo $f[11]->kvak();
   echo $f[30]->kvak();
+  echo $f[11]->kvak();
  }
 ?>
 

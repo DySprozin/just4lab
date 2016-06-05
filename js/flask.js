@@ -154,7 +154,7 @@ function f_flasks() {
   flask_title = document.getElementById('flask_title_' + i).innerHTML.split('(');
   flask_title = flask_title[0];
   flask_margin = (30 - flask_title.length);
-  flasks.innerHTML += '<div class="files_body" onclick="flask(this, ' + i + ');" onmouseover="flask_over = ' + i + '; flask_opacity = ' + i + ';" onmouseout="flask_out(' + i + '); flask_over = ' + '-1' + ';"><table class="files_title" style="margin-left:' + flask_margin + 'px;"><tr><td>123' + flask_title + '</td></tr></table></div>';
+  flasks.innerHTML += '<div class="files_body" onclick="flask(this, ' + i + ');" onmouseover="flask_over = ' + i + '; flask_opacity = ' + i + ';" onmouseout="flask_out(' + i + '); flask_over = ' + '-1' + ';"><table class="files_title" style="margin-left:' + flask_margin + 'px;"><tr><td>' + flask_title + '</td></tr></table></div>';
  }
  flasks.innerHTML += '<div class="footer_ie">&nbsp;</div>';
 }

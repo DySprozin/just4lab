@@ -25,7 +25,7 @@ class Cls_Kvak {
 			   'SFR' => 'СФР',
 			   'VFR' => 'ВФР',
 			   'AFR' => 'АФР',
-			   '4R' => 'ЧР'
+			   '4R' => 'Админ'
 			   );
   if (empty($GLOBALS['user']) && empty($username)) {
    $this->user = 'Гость';
