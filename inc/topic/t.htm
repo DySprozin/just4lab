@@ -1,0 +1,94 @@
+?>
+
+<?php
+
+function topic_t() {
+ $delete = ''; //удалить пост
+ $delete_topic = ''; //Удалить тему
+ $edit = ''; //редактировать пост
+ 
+ $t = $_GET['t'];
+ $f = $GLOBALS['f'];
+ $p_t = $GLOBALS['pages_on_topic'];
+ if ($f == 30) $p_t = 100500;
+ $page = empty($_GET['page']) ? 1 : $_GET['page'];
+ if (!empty($_GET['oldpage'])) $page = $_GET['oldpage'] + 1;
+
+ 
+  if ($page == "last") $page = 1; //временно!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
+ 
+ 
+ $lstart = ($page - 1) * $p_t;
+ $link = mysql_query("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$t . "';") or errDB($link);
+ $topic = mysql_fetch_assoc($link);
+ $title = $topic['topic_title'];
+
+//post_status=1 => первый пост
+//post_status=2 => первый пост всегда видно полностью
+//post_status=3 => пост не по теме !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ $link1 = mysql_query("SELECT * FROM `posts` WHERE (`post_status`='1' OR `post_status`='2') AND `topic_id`='" . (int)$t . "';") or errDB($link);
+ $link = mysql_query("SELECT * FROM `posts` WHERE `post_status`!='1' AND `post_status`!='2' AND `post_status`!='3' AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC;") or errDB($link);
+ $post1 = mysql_fetch_assoc($link1);
+ if (empty ($post1)) $post1 = mysql_fetch_assoc($link);
+ if (empty ($post1)) {
+  echo "Ложки нет. Этой темы нет. Ничего нет. Все тлен. ЖПНР! =)";
+  return;
+ }
+ $link = mysql_query("SELECT * FROM `posts` WHERE `post_id`!=" . (int)$post1['post_id'] . " AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC LIMIT " . $lstart . "," . $p_t . ";") or errDB($link);
+
+ //post_status=1 => первый пост
+ $post_status = $post1['post_status'];
+ if (empty($post_status)) $post_status = 1;
+ 
+ if (strpbrk($f[$_GET['f']]->get_chmods(), 'D')) $delete_topic= ' <div style="float:right"><a href="./deltop-' . $post1['topic_id'] . '">Удалить</a> </div><br>';
+ 
+ echo $delete_topic;
+ if ($_GET['f'] != 30) echo '<div align="center">' . $title . '</div><hr style="margin-top:8px;">';
+ 
+ echo '<div id="first_fade" onclick="open_post();"><span>Раскрыть первое сообщение</span></div>';
+ 
+ if ($page == 1) $postclass = "1page";
+ elseif ($page > 1 && $post_status == 2) $postclass = "1page";
+ elseif ($page > 1 && $post_status == 1) $postclass = "first_fade"; 
+
+ //Пока все скрытые сообщения скрываем (ниже - тоже)
+ while(preg_match("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$][\r\n]*/is",$post1['post_text'])){
+  $post1['post_text']=preg_replace_callback("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$]/is", "base64r_decode_off", $post1['post_text']);
+ }
+ 
+ echo '<div id="first_post" class="' . $postclass . '">' . $post1['post_text'] . '<hr style="margin:5px; margin-top: 18px;"><div align="right">' . $post1['poster_name'] . ' (написано ' . post_time($post1['post_time']) . ')</div></div>';
+ 
+ $footer_kva = '<div>&nbsp;</div>';
+ 
+
+ while ($post = mysql_fetch_assoc($link)) {
+  //Пока все скрытые сообщения скрываем (выше - тоже)
+  while(preg_match("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$][\r\n]*/is",$post['post_text'])){
+   $post['post_text']=preg_replace_callback("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$]/is", "base64r_decode_off", $post['post_text']);
+  }
+  $post_time = post_time($post['post_time']);
+  $kva_user = new Cls_Topic($post['poster_name']);
+  
+  if (strpbrk($f[$_GET['f']]->get_chmods(), 'D')) $delete= ' <a href="./del-' . $post['post_id'] . '">Удалить</a> ';
+  ///////if (strpbrk($f[$_GET['f']]->get_chmods(), 'E')) $edit = ' <a href="./edit-' . $post['post_id'] . '">Редактировать</a> ';;
+  $footer_kva .= '<div class="comment_kva_box"><div class="avatar" align="right"><div>' . $post['poster_name'] . '</div><div class="vgroup">' . $kva_user->vgroup . '</div>'
+              . '</div><div class="comments_kva">' . '<div class="post_top">Отправлено: ' . $post_time . '<div style="float:right" id="'.$post['post_id'].'">' . $delete . '</div></div><br>'
+			  . $post['post_text'] . '</div></div>';
+ }
+
+ if (strpbrk($f[$_GET['f']]->get_chmods(), 'w')) {
+  $footer_kva .= '<div class="comment_kva_box"><div class="avatar" align="right"><div>' . $GLOBALS['user'] . '</div><div class="vgroup">' . $f[$_GET['f']]->vgroup . '</div>'
+              . '</div><div class="comments_kva">' . '<div class="post_top">Ваш комментарий:</div><br>
+			  <form method="post" class="formStyle" action="." name="kva_form">
+     <input type="hidden" name="antispam">
+			   <textarea name="postText" class="postText" cols="1" rows="1"></textarea><br>
+			   <input type="submit" name="submit" value="Отправить">
+			  </form></div></div>';
+ }
+ $forum_bottom = '<div class="forum_bottom"><a href="/topic/' . $_GET['f'] . '/"><span>&lt;&lt;</span> ' . strip_tags($f[$_GET['f']]->title) . ' </a></div>';
+ $footer_kva .= '<div class="forum_lbottom" align="right">' . $forum_bottom . $GLOBALS['topic_pages'] . '&nbsp;</div><br>';
+ $GLOBALS['footer_kva'] = $footer_kva;
+}
+
+topic_t();

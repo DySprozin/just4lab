@@ -1,7 +1,7 @@
 <?php 
 
-include_once ROOT . 'Cls/Cls_Kvak.php';
-include_once ROOT . 'components/kvak/index.php';
+include_once ROOT . 'Cls/Cls_Topic.php';
+include_once ROOT . 'components/topic/index.php';
 
  $link = mysql_query("SELECT * FROM `posts` WHERE `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_time`;") or errDB($link);
  $tmp = 0;
@@ -22,7 +22,7 @@ if ($f[11]->user == 'Гость') {
 <div align="center"><span style="border-bottom: 1px dashed #1D67A4; cursor:pointer;" onclick="document.getElementById('paper_comment').style.display='inline'"> Войдите под вашим логином/паролем </span></div>
 <br>
 <div align="center" id="paper_comment" style="display:block;" >
-      <form class="auth_form" action="/kvak/" method="POST"> 
+      <form class="auth_form" action="/topic/" method="POST"> 
        <input class="login" name="login" type="text"> 
 	   <input class="password" type="password" name="password"> 
 	   <input name="submit" class="auth" value="Вход" type="submit"> 
@@ -57,8 +57,8 @@ VK.Widgets.Auth("vk_auth", {width: "300px", authUrl: '/dev/Auth'});
 else {
 //!
 echo '<div id="comment_kva_box" class="comment_kva_box"><div class="avatar" align="right" ><div>' . $f[11]->user . '</div><div class="vgroup">' . $f[11]->vgroup . '</div>'
-              . '</div><div class="comments_kva" style="width:80%;">' . '<div class="post_top">Ваш комментарий:<div style="float:right"><a href="/kvak/out">Выйти</a></div></div><br>
-			  <form method="post" name="paper_form" class="formStyle" action="/kvak/' . $_GET['f'] . '/' . $_GET['t'] . '/">
+              . '</div><div class="comments_kva" style="width:80%;">' . '<div class="post_top">Ваш комментарий:<div style="float:right"><a href="/topic/out">Выйти</a></div></div><br>
+			  <form method="post" name="paper_form" class="formStyle" action="/topic/' . $_GET['f'] . '/' . $_GET['t'] . '/">
      <input type="hidden" name="antispam">
      <textarea name="postText" class="postText" cols="1" rows="1"></textarea><br>
 			   <input type="submit" name="submit" value="Отправить">

@@ -3,7 +3,7 @@
 
 <?php
 
-function kvak_index_comments() {
+function topic_index_comments() {
  $ch = 0;
  $posts = array();
  $idts = array();
@@ -41,15 +41,15 @@ function kvak_index_comments() {
   $post = $Tidy;
 
   echo '<div style="background:#f0f0f0; width: 90%; font-size:10pt; margin-left:5%;">' . 
-      '<a class="border_right_link" style="font-size:10pt;" href="/kvak/' . $f . '/' . $tps[$id] . '#' . $idps[$id] . '">' . $title . '</a><div style="font-size:4pt">&nbsp;</div>' . $post .
+      '<a class="border_right_link" style="font-size:10pt;" href="/topic/' . $f . '/' . $tps[$id] . '#' . $idps[$id] . '">' . $title . '</a><div style="font-size:4pt">&nbsp;</div>' . $post .
 	   '</div>
-	   <div style=" margin-left:5%; height: 5px; background-image: url(\'/kvak/img/mtail.gif\'); background-repeat: no-repeat;"></div>
+	   <div style=" margin-left:5%; height: 5px; background-image: url(\'/topic/img/mtail.gif\'); background-repeat: no-repeat;"></div>
 	   <div style=" margin-left:5%; font-size:10pt">' . $posters[$id] . ' (' . $dt_posts[$id] . ') </div><br>';
  } 
   
  }
 
 
-kvak_index_comments();
+topic_index_comments();
 ?>
 

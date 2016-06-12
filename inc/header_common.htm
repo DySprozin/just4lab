@@ -1,7 +1,7 @@
 <?php
 $rand_tmp = mt_rand(1,100000);
 SetCookie("antispam", $rand_tmp, 0, "/paper/");
-SetCookie("antispam", $rand_tmp, 0, "/kvak/");
+SetCookie("antispam", $rand_tmp, 0, "/topic/");
 
 ?><!DOCTYPE html>
 <html>
@@ -30,21 +30,6 @@ SetCookie("antispam", $rand_tmp, 0, "/kvak/");
    </style>
   <![endif]-->
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-9847570-1']);
-  _gaq.push(['_setDomainName', 'anabot.ru']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
   
  </head>
  <body>
@@ -56,32 +41,32 @@ SetCookie("antispam", $rand_tmp, 0, "/kvak/");
   <div class="logo_img">
 <?php 
 
-$hkvak = '';
-$kvak_search = '';
+$htopic = '';
+$topic_search = '';
 
-if ($meta['menu'] == '/kvak/') {
- if (!empty($kvak_out)) $kvak_out = str_repeat('&nbsp;', mt_rand(1, 10)) . $kvak_out;
- if (empty($_GET['search'])) $kvak_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
-                                            '<a class="menu_top" href="/kvak/search">[Искать]</a><br>';
- else $kvak_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
+if ($meta['menu'] == '/topic/') {
+ if (!empty($topic_out)) $topic_out = str_repeat('&nbsp;', mt_rand(1, 10)) . $topic_out;
+ if (empty($_GET['search'])) $topic_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
+                                            '<a class="menu_top" href="/topic/search">[Искать]</a><br>';
+ else $topic_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
                      '<a href="#main_top" class="visited" onclick="blink(\'actual_title\')">[Искать]</a><br>';
                      
- $hkvak = '<div class="hkvak">
-            ' . $kvak_out . '
-            ' . $kvak_search . '
+ $htopic = '<div class="htopic">
+            ' . $topic_out . '
+            ' . $topic_search . '
           </div>';
 }
 if ($meta['menu'] != '/') { ?>
-   <a href="/"><img class="logo_img" src="/img/logo.gif" alt="anabot"></a>
+   <a href="/"><img class="logo_img" src="/img/logo.gif" alt="4lab"></a>
 <?php }
 else { ?>
-<img class="logo_img" src="/img/logo.gif" alt="anabot">
+<img class="logo_img" src="/img/logo.gif" alt="4lab">
 <?php }?>
   </div>
  </div>
  <div class="head">
   <b class="head_title"><?php echo $meta['title']; ?></b> <br>
-  <?php echo $hkvak; ?>
+  <?php echo $htopic; ?>
   <div class="head_in"><?php echo $meta['head']; ?></div>
 
  </div>
@@ -154,15 +139,15 @@ if ($meta['menu'] == '/news/') { ?>
   </div>
 <?php }
 */
-if ($meta['menu'] == '/kvak/' && empty($_SERVER['QUERY_STRING'])) { ?>
+if ($meta['menu'] == '/topic/' && empty($_SERVER['QUERY_STRING'])) { ?>
   <div class="menu_top_unit">
-    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_big" src="/img/kvak.gif" alt="Квак"><br>
+    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_big" src="/img/topic.gif" alt="Квак"><br>
     <span class="js_off_menu">Квак<br>(тихий омут)</span>
   </div>
 <?php } else { ?>
   <div class="menu_top_unit">
-   <a href="/kvak/" class="menu_top">
-    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_small" src="/img/kvak.gif" alt="Квак"><br>
+   <a href="/topic/" class="menu_top">
+    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_small" src="/img/topic.gif" alt="Квак"><br>
     <span class="url">Квак<br>(тихий омут)</span>
    </a>
   </div>

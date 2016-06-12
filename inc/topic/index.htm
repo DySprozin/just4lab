@@ -1,0 +1,83 @@
+?>
+
+
+<?php
+
+function topic_index() {
+ $link = mysql_query("SELECT * FROM `posts` WHERE `post_status`!='3' AND `forum_id`!='30' ORDER BY `post_time` DESC") or errDB($link);
+ $ch = 0;
+ $posts = array();
+ $idts = array();
+ $f = $GLOBALS['f'];
+ 
+ while ($ch < $GLOBALS['num_main_posts']) {
+
+  $post = mysql_fetch_assoc($link);
+  $idf = $post['forum_id'];
+  $idt = $post['topic_id'];
+  $linkt = mysql_query("SELECT * FROM `topics` WHERE `topic_id`=" . (int)$idt) or errDB($link);
+  
+  $topic = mysql_fetch_assoc($linkt);
+if (!$topic) break;
+  if (mb_strlen(trim(strip_tags($post['post_text']), "\x00..\x1F"), "utf-8") < $GLOBALS['maxlen_main_posts'] ||
+     !strpbrk($f[$idf]->get_chmods(), 'rED') ||
+	 $f[$idf]->title == '' ||
+	 in_array($idt.'', $idts)) continue; //Чтобы темы не повторялись
+	 
+//   exit($GLOBALS['num_main_posts'] . ']');
+	 
+  $idts[] = $idt;
+  $posts[] = $post['post_text'];
+  $topics[] = $topic['topic_title'];
+  $posters[] = $post['poster_name'];
+  $idfs[] = $idf;
+  $ch++;
+ }
+
+ $Tidy = new tidy();
+ $Tidy_config = array('clean' => true, 'show-body-only' => true); 
+ foreach($posts as $id => $post) {
+  $post = strip_tags($post, "<br><div><font><span><b><i><s><a><strong>");
+  if(mb_strlen($post, "utf-8") > 800) {
+   $post = mb_substr($post, 0, 800, "utf-8") . '...';
+  }
+  $Tidy->parseString($post, $Tidy_config, 'utf8');
+  $post = $Tidy;
+  echo '<table class="topic_t">
+<tr>
+<td>
+<div class="topic_tit"><a href="/topic/' . $idfs[$id] . '/' . $idts[$id] . '/last">Из темы &laquo;' . $topics[$id] . '&raquo;</a></div>
+<table style="z-index:1; position: relative;">
+<tr><td style="width: 110px;"><img src="/topic/img/cloud/03.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;"></td><td><img src="/topic/img/cloud/05.gif" alt=""></td></tr>
+</table>
+
+</td>
+</tr>
+<tr style="background: #f0f0f0;">
+<td>
+<div class="topic">
+' . $post . '
+</div>
+
+
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><img src="/topic/img/cloud/07.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;">&nbsp;</td><td style="width: 27px;"><img src="/topic/img/cloud/09.gif" alt=""></td></tr><tr><td><img src="/topic/img/cloud/tail.gif" alt=""></td><td colspan="2">&nbsp;</td></tr>
+</table>
+
+</td>
+</tr>
+</table>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>' . $posters[$id] . '</b><a><div class="topic_grad"><a href="/topic/' . $idfs[$id] . '/' . $idts[$id] . '/last" class="topic_grad_link">&nbsp;</a></div>';
+ }
+}
+
+topic_index();
+?>
+

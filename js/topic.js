@@ -3,14 +3,14 @@ var firstfade;
 var spoiler_text_off = '<div style="color: orange; float: right;"> (двойной щелчок по тексту свернет его)</div>';
 var spoiler_text_on = '<div style="vertical-align: super; font-size: 10pt; color: green; float: right; cursor: pointer;"> раскрывай меня полностью</div>';
 
-function kvak() {
+function topic() {
  var h;
- kvaks = gpnrGetClass("kvak");
- kvak_grads = gpnrGetClass("kvak_grad");
- for (var i = 0; i < kvaks.length; i++) {
-  h = kvaks[i].offsetHeight;
+ topics = gpnrGetClass("topic");
+ topic_grads = gpnrGetClass("topic_grad");
+ for (var i = 0; i < topics.length; i++) {
+  h = topics[i].offsetHeight;
   h = h + '';
-  if (h.search("112") != "-1") kvak_grads[i].style.top = '-119px';
+  if (h.search("112") != "-1") topic_grads[i].style.top = '-119px';
  }
  
  if (document.forms['kva_form'].antispam) {

@@ -2,7 +2,7 @@
 
 <?php
 
-function kvak_s() {
+function topic_s() {
  $onlytext = '';
  $onlytitle = '';
  $any = '';
@@ -39,7 +39,7 @@ function kvak_s() {
   $Tidy_config = array('clean' => true, 'show-body-only' => true); 
 
   if ($_POST['searchtype'] == 'onlytitle' || $_POST['searchtype'] == 'any') {
-   $result = $sphinx->Query($stext, 'kvak_title');
+   $result = $sphinx->Query($stext, 'topic_title');
    if ($result && isset($result['matches'])) {
     $ids = array_keys($result['matches']);
     $id_list = implode(',', $ids);
@@ -47,7 +47,7 @@ function kvak_s() {
     $resource = mysql_query($sql);
     while ($result = mysql_fetch_assoc($resource)) {
      if (!strpbrk($f[$result['forum_id']]->get_chmods(), 'rED')) continue;
-     $light = $sphinx->BuildExcerpts(array(strip_tags($result['topic_title'], "<br>")), 'kvak_title', $stext, array('around' => 5, "chunk_separator" => ' &lt...&gt; '));
+     $light = $sphinx->BuildExcerpts(array(strip_tags($result['topic_title'], "<br>")), 'topic_title', $stext, array('around' => 5, "chunk_separator" => ' &lt...&gt; '));
 
      $dt_create = new DateTime($result['topic_time']);
      $dt_create_date = $dt_create->format('d.m.Y');
@@ -59,9 +59,9 @@ function kvak_s() {
      
      foreach ($light as $value) 
      $search_result .= '<div style="background:#f0f0f0;">' . 
-       '<a href="/kvak/' . $result['forum_id'] . '/' . $result['topic_id'] . '">' . $value . '</a>' .
-	   '<div class="foright"><span class="foall"><a href="/kvak/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">все</a></span>&nbsp;<span class="nkva"><a href="' . $result['topic_id'] . '/kva">ква!</a></span></div></div>
-	   <div style="height: 5px; background-image: url(\'/kvak/img/mtail.gif\'); background-repeat: no-repeat;"></div>
+       '<a href="/topic/' . $result['forum_id'] . '/' . $result['topic_id'] . '">' . $value . '</a>' .
+	   '<div class="foright"><span class="foall"><a href="/topic/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">все</a></span>&nbsp;<span class="nkva"><a href="' . $result['topic_id'] . '/kva">ква!</a></span></div></div>
+	   <div style="height: 5px; background-image: url(\'/topic/img/mtail.gif\'); background-repeat: no-repeat;"></div>
 	   <div style="font-size:10pt">' . $result['topic_last_poster'] . ' (' . $dt_last_date . ' в ' . $dt_last_time . '), <i>автор темы: </i>' . $result['topic_poster_name'] . ' (' . $dt_create_date . ' в ' . $dt_create_time . ')</div><br>';
     }
    }
@@ -86,20 +86,20 @@ function kvak_s() {
       $Tidy->parseString($value, $Tidy_config, 'utf8');
       $value = $Tidy;
       $search_result .= '
-<table class="kvak_t">
+<table class="topic_t">
 <tr>
 <td>
-<div class="kvak_tit"><a href="/kvak/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">Из темы &laquo;' . $topic['topic_title'] . '&raquo;</a></div>
+<div class="topic_tit"><a href="/topic/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">Из темы &laquo;' . $topic['topic_title'] . '&raquo;</a></div>
 <table style="z-index:1; position: relative;">
-<tr><td style="width: 110px;"><img src="/kvak/img/cloud/03.gif" alt=""></td>
-<td style="background: #f0f0f0; width:100%;"></td><td><img src="/kvak/img/cloud/05.gif" alt=""></td></tr>
+<tr><td style="width: 110px;"><img src="/topic/img/cloud/03.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;"></td><td><img src="/topic/img/cloud/05.gif" alt=""></td></tr>
 </table>
 
 </td>
 </tr>
 <tr style="background: #f0f0f0;">
 <td>
-<div class="kvak_search">
+<div class="topic_search">
 ' . $value. '
 </div>
 
@@ -110,15 +110,15 @@ function kvak_s() {
 <td>
 <table>
 <tr>
-<td><img src="/kvak/img/cloud/07.gif" alt=""></td>
-<td style="background: #f0f0f0; width:100%;">&nbsp;</td><td style="width: 27px;"><img src="/kvak/img/cloud/09.gif" alt=""></td></tr><tr><td><img src="/kvak/img/cloud/tail.gif" alt=""></td><td colspan="2">&nbsp;</td></tr>
+<td><img src="/topic/img/cloud/07.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;">&nbsp;</td><td style="width: 27px;"><img src="/topic/img/cloud/09.gif" alt=""></td></tr><tr><td><img src="/topic/img/cloud/tail.gif" alt=""></td><td colspan="2">&nbsp;</td></tr>
 </table>
 </td>
 </tr>
 </table>
 &nbsp;&nbsp;&nbsp;&nbsp;<b>' . $result['poster_name'] . '</b><br><br>';
 
-      //$search_result .= '<a href="/kvak/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">Перейти к теме</a><br><br>' . $value . '<hr>';
+      //$search_result .= '<a href="/topic/' . $result['forum_id'] . '/' . $result['topic_id'] . '/all">Перейти к теме</a><br><br>' . $value . '<hr>';
      }
     }
    }
@@ -133,7 +133,7 @@ function kvak_s() {
  
  echo <<<FORM
 
- <form action="/kvak/search" method="POST">
+ <form action="/topic/search" method="POST">
   <input class="searchtext" type="text" name="searchtext"> 
 <input class="searchsubmit" name="submit" type="submit" value="Найти">
   <br>
@@ -148,4 +148,4 @@ FORM;
 }
 
 
-kvak_s();
+topic_s();

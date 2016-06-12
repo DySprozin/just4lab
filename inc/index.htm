@@ -7,7 +7,7 @@ require_once ROOT . 'components/HTMLPurifier/HTMLPurifier.auto.php';
 
 
 
-function kvak_index() {
+function topic_index() {
 
  $config_tmp = HTMLPurifier_Config::createDefault();
  $purifier = new HTMLPurifier($config_tmp);
@@ -42,13 +42,13 @@ function kvak_index() {
   $post = $purifier->purify($post);
   $Tidy->parseString($post, $Tidy_config, 'utf8');
   $post = $Tidy;
-  echo '<table class="kvak_t">
+  echo '<table class="topic_t">
 <tr>
 <td>
 <div class="blog_tit"></div>
 <table style="z-index:1; position: relative;">
-<tr><td style="width: 110px;"><img src="/kvak/img/cloud/03.gif" alt=""></td>
-<td style="background: #f0f0f0; width:100%;"></td><td><img src="/kvak/img/cloud/05.gif" alt=""></td></tr>
+<tr><td style="width: 110px;"><img src="/topic/img/cloud/03.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;"></td><td><img src="/topic/img/cloud/05.gif" alt=""></td></tr>
 </table>
 
 </td>
@@ -66,17 +66,17 @@ function kvak_index() {
 <td>
 <table>
 <tr>
-<td><img src="/kvak/img/cloud/07.gif" alt=""></td>
-<td style="background: #f0f0f0; width:100%;">&nbsp;</td><td style="width: 27px;"><img src="/kvak/img/cloud/09.gif" alt=""></td></tr><tr><td><img src="/kvak/img/cloud/tail.gif" alt=""></td><td colspan="2">&nbsp;</td></tr>
+<td><img src="/topic/img/cloud/07.gif" alt=""></td>
+<td style="background: #f0f0f0; width:100%;">&nbsp;</td><td style="width: 27px;"><img src="/topic/img/cloud/09.gif" alt=""></td></tr><tr><td><img src="/topic/img/cloud/tail.gif" alt=""></td><td colspan="2">&nbsp;</td></tr>
 </table>
 
 </td>
 </tr>
 </table>
-&nbsp;&nbsp;&nbsp;&nbsp;<b>' . $posters[$id] . '</b> <i>(' . $dt_posts[$id] . ')</i> <a><div class="kvak_grad"><a href="/kvak/30/' . $idts[$id] . '/last" class="kvak_grad_link">&nbsp;</a></div>';
+&nbsp;&nbsp;&nbsp;&nbsp;<b>' . $posters[$id] . '</b> <i>(' . $dt_posts[$id] . ')</i> <a><div class="topic_grad"><a href="/topic/30/' . $idts[$id] . '/last" class="topic_grad_link">&nbsp;</a></div>';
  }
 }
 
-kvak_index();
+topic_index();
 ?>
 

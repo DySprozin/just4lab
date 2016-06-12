@@ -161,7 +161,7 @@ LI.new {
  padding-top: 4px;
 }
 
-.hkvak {
+.htopic {
  float:right;
  right:10%;
  position: absolute;
@@ -171,7 +171,7 @@ LI.new {
  width:20%;
 }
 
-A.hkvak {
+A.htopic {
  font-size:10.5pt;
  color:#009933;
 }
@@ -197,14 +197,14 @@ A.hkvak {
  height:48px;
 }
 
-.kvak_head {
+.topic_head {
  top:175px;
  position:relative;
  width:95%;
  margin:0px auto;
 }
 
-.kvak_footer {
+.topic_footer {
  position:relative;
  width:92%;
  margin:0px auto;
@@ -949,14 +949,14 @@ text-shadow: -10px 10px 0px #FF9933,
 }
 
 
-.kvak_search {
+.topic_search {
  line-height: normal;
  padding-left: 10px;
  font-size: 12pt;
  width: 95%;
 }
 
-.kvak {
+.topic {
  line-height: normal;
  overflow: hidden;
  max-height: 112px;
@@ -982,18 +982,18 @@ text-shadow: -10px 10px 0px #FF9933,
  width: expression( this.scrollWidth > 299 ? "300px" : "auto" );
 }
 
-.kvak_t, .kvak_t TABLE {
+.topic_t, .topic_t TABLE {
 width:100%;
 border-collapse:collapse;
 border-spacing:0;
 line-height: 0px;
 }
 
-.kvak_t TD {
+.topic_t TD {
  padding:0px;
 }
 
-.kvak_tit {
+.topic_tit {
  z-index:5; 
  position: relative; 
  top: 13px;
@@ -1007,15 +1007,15 @@ line-height: 0px;
  left: 3%;
 }
 
-.kvak_grad {
+.topic_grad {
  z-index:10; 
  position: relative; 
  top: -99999px;
- background-image: url("/kvak/img/grad.png");
+ background-image: url("/topic/img/grad.png");
  height: 40px;
 }
 
-.kvak_grad_link  {
+.topic_grad_link  {
  height: 40px;
  text-decoration: none;
  display: block;
@@ -1053,7 +1053,7 @@ line-height: 0px;
  width: 10%;
  height: 70px;
  /*border: 1px solid red;*/
- background-image: url("/kvak/img/tail_post.gif");
+ background-image: url("/topic/img/tail_post.gif");
  background-repeat: no-repeat;
  background-position: 100% -20px;
 }

@@ -12,13 +12,13 @@ if (preg_match('#^/paper/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['t'])) 
 ?>
 
 <?php
-if (preg_match('#^/kvak/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['f']) && empty($_GET['t'])) {
+if (preg_match('#^/topic/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['f']) && empty($_GET['t'])) {
  if (strpbrk($f[$_GET['f']]->get_chmods(), 'D')) {
 ?>
 
   <!-- comment form -->
   <br class="break">
-  <?php include ROOT . 'inc/kvak/new_theme.htm'; ?>
+  <?php include ROOT . 'inc/topic/new_theme.htm'; ?>
 
 <?php
  }

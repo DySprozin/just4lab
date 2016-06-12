@@ -41,7 +41,7 @@ function window_onload() {
  h[1] = gpnrGetClass("img_small", "img");
  h[2] = gpnrGetClass("logo_img", "img");
  h[3] = gpnrGetClass("img_right_menu", "img");
- h[4] = gpnrGetClass("kvak_logo_img", "img");
+ h[4] = gpnrGetClass("topic_logo_img", "img");
  var dot = gpnrGetClass("img_dot", "img");
  for (var i = 0; i < h.length; i++){
   for (var j = 0; j < h[i].length; j++){
@@ -69,7 +69,7 @@ function window_onload() {
    logo.style.height = 150;
 
   var logo = Array();
-  logo = gpnrGetClass("kvak_logo_img", "img");
+  logo = gpnrGetClass("topic_logo_img", "img");
   logo = logo[0];
   if (logo.scrollHeight > 149)
    logo.style.height = 150;
@@ -87,7 +87,7 @@ function window_onload() {
  }
  ////
  if(typeof f_flasks == 'function') f_flasks();
- if(typeof kvak == 'function') kvak();
+ if(typeof topic == 'function') topic();
  if(typeof paper == 'function') paper();
 }
 
