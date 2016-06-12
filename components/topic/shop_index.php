@@ -1,6 +1,8 @@
 <?php
 set_time_limit(0);
 
+
+
 if (!empty($_POST['postText'])) {
  if (empty($_POST['TitleTheme']) && $_POST['antispam']  != md5($_COOKIE['antispam'])) $_POST['postText'] = '';
 }
@@ -283,7 +285,7 @@ $main_css = "border";
 				  WHERE `topic_id` = '" . (int)$_GET['t'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
     mysql_query ("UPDATE `forums` SET `posts_count` = `posts_count` - 1 WHERE `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
     mysql_query ("UPDATE `users` SET `num_posts` = `num_posts` - 1 WHERE `username` = '" . mysql_real_escape_string($f[$_GET['f']]->user) . "';") or errDB($link);
-	Header('Location: ' . $_SERVER['HTTP_REFERER']);
+	Header('Location: /shop/');
     exit();
 		
    }
@@ -291,7 +293,7 @@ $main_css = "border";
    if (!empty($_GET['deltop']) && strpbrk($f[$_GET['f']]->get_chmods(), 'D')) {
     $link = mysql_query("UPDATE `topics` SET `topic_status` = '2' WHERE `topic_id` = '".$_GET['deltop']."';") or errDB($link);
     $link = mysql_query("UPDATE `posts` SET `post_status` = '3' WHERE `topic_id` = '".$_GET['deltop']."';") or errDB($link);
-    Header('Location: /topic/'.$_GET['f'].'/');
+    Header('Location: /shop/');
    }
    
    //Редактирование поста
@@ -309,7 +311,7 @@ $main_css = "border";
    }
    
    $align_topic = "align=right";
-   $forum_top = '<div class="forum_top"><a href="/topic/' . $_GET['f'] . '/"><span>&lt;&lt;</span> ' . strip_tags($f[$_GET['f']]->title) . ' </a></div>';
+   $forum_top = '<div class="forum_top"><a href="/shop/"><span>&lt;&lt;</span> ' . strip_tags($f[$_GET['f']]->title) . ' </a></div>';
    $pages = paginator($_GET['t'], $page, "topic");
    $topic_pages = $pages;
    $topic_body = join(file(ROOT . 'inc/topic/shop_t.htm'));

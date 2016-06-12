@@ -1,5 +1,7 @@
 RewriteEngine on 
 
+
+
 RewriteCond %{QUERY_STRING} ^$
 RewriteRule ^([0-9]+)$ /topic/$1/ [L,R=301]
 RewriteRule ^([0-9]+)\/$ /topic/index.php?f=$1&page=1 [L]
@@ -20,3 +22,8 @@ RewriteRule ^search/?$ /topic/index.php?search=1 [L]
 RewriteRule ^([0-9]+)/([0-9]+)/del-([0-9]+)$ /topic/index.php?f=$1&t=$2&delpost=$3 [L]
 RewriteRule ^([0-9]+)/([0-9]+)/deltop-([0-9]+)$ /topic/index.php?f=$1&t=$2&deltop=$3 [L]
 RewriteRule ^([0-9]+)/([0-9]+)/edit-([0-9]+)$ /topic/index.php?f=$1&t=$2&editpost=$3 [L]
+
+RewriteRule ^([0-9]+)/del-([0-9]+)$ /topic/index.php?f=$1&t=$2&delpost=$2 [L]
+RewriteRule ^([0-9]+)/deltop-([0-9]+)$ /topic/index.php?f=$1&t=$2&deltop=$2 [L]
+RewriteRule ^([0-9]+)/edit-([0-9]+)$ /topic/index.php?f=$1&t=$2&editpost=$2 [L]
+

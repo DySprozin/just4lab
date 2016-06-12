@@ -1,5 +1,8 @@
 php_value output_buffering On
 RewriteEngine on 
+
+
+
 RewriteRule ^guest/?$ http://forum.anabot.ru/6/86/ [R=301]
 RewriteRule ^polza/?$ /lab/ [R=301]
 RewriteRule ^polza/bob.*$ /lab/calc/ [R=301]
@@ -9,7 +12,16 @@ RewriteRule ^stats/awstats.pl(.*) /awstats/awstats.pl?config=anabot.ru$1 [QSA,L,
 RewriteRule ^files/disk.php$ http://files.anabot.ru [R=301]
 RewriteRule ^files/download.php.*$ http://files.anabot.ru [R=301]
 
-RewriteRule ^shop/(.*)$ /topic/255/$1 [L]
+RewriteCond %{REQUEST_URI} ^/shop/[0-9]+/?$
+RewriteRule ^shop/(.*)/?$ /topic/255/$1/ [L]
+
+RewriteCond %{REQUEST_URI} ^/shop/?$
+RewriteRule ^shop/(.*)/?$ /topic/255/$1/ [L]
+
+
+RewriteCond %{REQUEST_URI} ^/shop/[^0-9][^/].*$
+RewriteRule ^shop/(.*)$ /topic/255/$1 [R]
+
 
 
 Options +FollowSymLinks

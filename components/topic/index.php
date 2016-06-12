@@ -1,6 +1,14 @@
 <?php
 set_time_limit(0);
 
+preg_match("#/topic/255(.*)$#isU", $_SERVER['REQUEST_URI'], $tmp);
+
+###
+#shop hack
+if (empty($_POST) && !empty($tmp[1])) {
+ Header("Location: /shop/" . trim($tmp[1],'/'));
+}
+
 if (!empty($_POST['postText'])) {
  if (empty($_POST['TitleTheme']) && $_POST['antispam']  != md5($_COOKIE['antispam'])) $_POST['postText'] = '';
 }
