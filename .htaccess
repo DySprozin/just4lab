@@ -9,6 +9,9 @@ RewriteRule ^stats/awstats.pl(.*) /awstats/awstats.pl?config=anabot.ru$1 [QSA,L,
 RewriteRule ^files/disk.php$ http://files.anabot.ru [R=301]
 RewriteRule ^files/download.php.*$ http://files.anabot.ru [R=301]
 
+RewriteRule ^shop/(.*)$ /topic/255/$1 [L]
+
+
 Options +FollowSymLinks
 RewriteCond %{HTTP_HOST} ^podpol.anabot.ru$ [OR]
 RewriteCond %{HTTP_HOST} ^mbl.anabot.ru$ [OR]
@@ -20,8 +23,8 @@ RewriteRule ^note/?$ https://mobislenotes.com/app/ [R=301,L]
 
 RewriteRule ^-(.*)$ /b/index.php?nick=$1&title=Микроблог
 
-ErrorDocument 404 /errors/404.php
-ErrorDocument 403 https://vk.com/anabotru?z=photo-758006_397407499%2Falbum-758006_00%2Frev
+#ErrorDocument 404 /errors/404.php
+#ErrorDocument 403 https://vk.com/anabotru?z=photo-758006_397407499%2Falbum-758006_00%2Frev
 
 
 #Order Deny,Allow

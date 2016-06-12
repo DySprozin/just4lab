@@ -84,7 +84,7 @@ if ($meta['menu'] == '/') { ?>
     <img class="img_dot" src="/img/dot.gif" alt="На главную"><img class="img_small" src="/img/home.gif" alt="На главную"><br><span class="url">Вернуться <br>на главную</span></a>
   </div>
 <?php }
-
+/*
 if ($meta['menu'] == '/files/') { ?>
   <div class="menu_top_unit">
     <img class="img_dot" src="/img/dot.gif" alt="Файловый архив РХТУ" title="Сейчас вы в файловом архиве РХТУ"><img class="img_big" src="/img/files.gif" alt="Файловый архив РХТУ" title="Сейчас вы в файловом архиве РХТУ">
@@ -97,58 +97,31 @@ if ($meta['menu'] == '/files/') { ?>
   </div>
 <?php }
 
-if ($meta['menu'] == '/lab/') { ?>
+*/
+
+if ($_SERVER['REQUEST_URI'] == '/shop/') { ?>
   <div class="menu_top_unit">
-    <img class="img_dot" src="/img/dot.gif" alt="Лаборатория" title="Вы у входа в лабораторию"><img class="img_big" src="/img/lab.gif" alt="Лаборатория" title="Вы у входа в лабораторию">
-	<span class="js_off_menu">Лаборатория</span>
+    <img class="img_dot" src="/img/dot.gif" alt="Магазин онлайн" title="Магазин онлайн"><img class="img_big" src="/img/shop.gif" alt="Магазин онлайн" title="Магазин онлайн">
+	<span class="js_off_menu">Магазин</span>
   </div>
 <?php } else { ?>
   <div class="menu_top_unit">
-   <a href="/lab/" class="menu_top">
-    <img class="img_dot" src="/img/dot.gif" alt="Лаборатория"><img class="img_small" src="/img/lab.gif" alt="Лаборатория"><br>
-    <span class="url">Лаборатория</span>
-   </a>
+   <a href="/shop/" class="menu_top">
+    <img class="img_dot" src="/img/dot.gif" alt="Магазин онлайн"><img class="img_small" src="/img/shop.gif" alt="Магазин онлайн"><br><span class="url">Магазин</span></a>
   </div>
 <?php }
 
-if ($meta['menu'] == '/paper/') { ?>
-  <div class="menu_top_unit">
-    <img class="img_dot" src="/img/dot.gif" alt="Газета Альтернативный Менделеевец" title="Сейчас вы читаете газетку..."><img class="img_big" src="/img/paper.gif" alt="Газета Альтернативный Менделеевец" title="Сейчас вы читаете газетку..."><br>
-	<span class="js_off_menu">Газета</span>
-  </div>
-<?php } else { ?>
-  <div class="menu_top_unit">
-   <a href="/paper/" class="menu_top" title="в рулонах и без текста :)">
-    <img class="img_dot" src="/img/dot.gif" alt="Газета Альтернативный Менделеевец"><img class="img_small" src="/img/paper.gif" alt="Газета Альтернативный Менделеевец"><br>
-    <span class="url">Газета</span>
-   </a>
-  </div>
-<?php }
-/*
-if ($meta['menu'] == '/news/') { ?>
-  <div class="menu_top_unit">
-    <img class="img_dot" src="/img/dot.gif" alt="Позитивные новости" title="Заряжаемся позитивом! =)"><img class="img_big" src="/img/goodNews.gif" alt="Позитивные новости" title="Заряжаемся позитивом! =)"><br>
-	<span class="js_off_menu">Позитивные<br>новости</span>
-  </div>
-<?php } else { ?>
-  <div class="menu_top_unit">
-   <a href="#/news/" class="menu_top">
-    <img class="img_dot" src="/img/dot.gif" alt="Позитивные новости"><img class="img_small" src="/img/goodNews.gif" alt="Позитивные новости"><br>
-    <span class="url">Позитивные<br>новости</span>
-   </a>
-  </div>
-<?php }
-*/
+
 if ($meta['menu'] == '/topic/' && empty($_SERVER['QUERY_STRING'])) { ?>
   <div class="menu_top_unit">
-    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_big" src="/img/topic.gif" alt="Квак"><br>
-    <span class="js_off_menu">Квак<br>(тихий омут)</span>
+    <img class="img_dot" src="/img/dot.gif" alt="Поддержка"><img class="img_big" src="/img/topic.gif" alt="Поддержка"><br>
+    <span class="js_off_menu">Поддержка<br>(помощь и общение)</span>
   </div>
 <?php } else { ?>
   <div class="menu_top_unit">
    <a href="/topic/" class="menu_top">
-    <img class="img_dot" src="/img/dot.gif" alt="Квак"><img class="img_small" src="/img/topic.gif" alt="Квак"><br>
-    <span class="url">Квак<br>(тихий омут)</span>
+    <img class="img_dot" src="/img/dot.gif" alt="Поддержка"><img class="img_small" src="/img/topic.gif" alt="Поддержка"><br>
+    <span class="url">Поддержка<br>(помощь и общение)</span>
    </a>
   </div>
 <?php } ?>

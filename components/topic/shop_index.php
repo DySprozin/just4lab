@@ -171,12 +171,12 @@ $main_css = "border";
 
 
  if (empty($_GET['f']) && empty($_GET['search'])) {
-  $topic_body = join(file(ROOT . 'inc/topic/index.htm'));
+  $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
  }
  elseif (!empty($_GET['f']) && empty($_GET['t'])) {
   if (empty($f[$_GET['f']]->title) || !strpbrk($f[$_GET['f']]->get_chmods(), 'rED')) {
    $topic_title = '<span style="color:red">Такого квака не найдено :-(</span>';
-   $topic_body = join(file(ROOT . 'inc/topic/index.htm'));
+   $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
   }
   //Пока создают темы только модеры/админы
   elseif (!empty($_POST['postText']) && strpbrk($f[$_GET['f']]->get_chmods(), 'D') && !empty($_POST['TitleTheme'])) {
@@ -187,6 +187,7 @@ $main_css = "border";
    else $post_text = $purifier->purify($_POST['postText']);
 
    $post_text = str_replace(array("\r", "\r\n"), '<br>', $post_text);
+
    mysql_query("INSERT INTO `topics`
                (`topic_title`, `topic_poster_name`, `topic_time`, `topic_views`, `forum_id`, `topic_status`, `topic_last_post_id`, `posts_count`, `sticky`, `topic_last_post_time`, `topic_last_poster`)
                VALUES ('$theme_title', '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', now(), '0', " . (int)$_GET['f'] . ", '0', '1', '0', '0', now(), '" . mysql_real_escape_string($f[$_GET['f']]->user) . "');") or errDB($link);
@@ -221,7 +222,7 @@ $main_css = "border";
    if (!empty($_GET['oldpage'])) $page = $_GET['oldpage'] + 1;
    $pages = paginator($_GET['f'], $page, "forum");
    $topic_pages = $pages;
-   $topic_body = join(file(ROOT . 'inc/topic/f.htm'));
+   $topic_body = join(file(ROOT . 'inc/topic/shop_f.htm'));
    $topic_title = strip_tags($f[$_GET['f']]->title . ' ' . $f[$_GET['f']]->title2);
    $f[$_GET['f']]->active = 'on';
   }
@@ -230,7 +231,7 @@ $main_css = "border";
  elseif (!empty($_GET['f']) && !empty($_GET['t'])) {
   if (!strpbrk($f[$_GET['f']]->get_chmods(), 'rED')) { //Человек должен иметь право на чтение (r), либо быть модером
    $topic_title = '<span style="color:red">Такого квака не найдено :-(</span>';
-   $topic_body = join(file(ROOT . 'inc/topic/index.htm'));
+   $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
   }
   else {
    if (!empty($_POST['postText']) && strpbrk($f[$_GET['f']]->get_chmods(), 'w') && empty($_POST['CreateTheme'])) {
@@ -311,7 +312,7 @@ $main_css = "border";
    $forum_top = '<div class="forum_top"><a href="/topic/' . $_GET['f'] . '/"><span>&lt;&lt;</span> ' . strip_tags($f[$_GET['f']]->title) . ' </a></div>';
    $pages = paginator($_GET['t'], $page, "topic");
    $topic_pages = $pages;
-   $topic_body = join(file(ROOT . 'inc/topic/t.htm'));
+   $topic_body = join(file(ROOT . 'inc/topic/shop_t.htm'));
    $topic_title = '';
    
    $link = mysql_query("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$_GET['t'] . "';") or errDB($link);
@@ -332,7 +333,7 @@ $main_css = "border";
    $topic_title = 'Результаты поиска <i class="lsearch">&laquo' . htmlspecialchars($_POST['searchtext']) . '&raquo;</i>';
    $m_title = 'Результаты поиска "' . htmlspecialchars($_POST['searchtext']) . '"';
   }
-  $topic_body = join(file(ROOT . 'inc/topic/s.htm'));
+  $topic_body = join(file(ROOT . 'inc/topic/shop_s.htm'));
  }
  
 if (!isset($pages)) $pages = '<img src="/img/dot.gif" alt="" width="20px" height="20px">';

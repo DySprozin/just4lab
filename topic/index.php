@@ -3,7 +3,8 @@ define ('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
 include ROOT . 'conf/main_conf.php';
 
 include ROOT . 'Cls/Cls_Topic.php';
-include ROOT . 'components/topic/index.php';
+if (strpos($_SERVER['REQUEST_URI'], "shop")) include ROOT . 'components/topic/shop_index.php';
+else include ROOT . 'components/topic/index.php';
 
 include ROOT . 'inc/header_common.htm';
 
@@ -15,7 +16,7 @@ include ROOT . 'inc/header_common.htm';
 <div class="topic_head" <?php echo empty($align_topic) ? '' : $align_topic; ?>><?php echo empty($forum_top) ? '' : $forum_top; echo empty($topic_pages) ? '&nbsp;' : $topic_pages; ?></div>
 <!--Список КВА -->
 
-<table class="table_actual kva">
+<table class="table_actual">
  <tr>
   <td class="border_left_top">
    <div class="actual_title" id="actual_title">

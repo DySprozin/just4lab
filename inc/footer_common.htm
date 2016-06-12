@@ -18,7 +18,11 @@ if (preg_match('#^/topic/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['f']) &
 
   <!-- comment form -->
   <br class="break">
-  <?php include ROOT . 'inc/topic/new_theme.htm'; ?>
+  <?php 
+  
+  if (strpos($_SERVER['REQUEST_URI'], "shop")) include ROOT . 'inc/topic/new_theme_shop.htm'; 
+  else include ROOT . 'inc/topic/new_theme.htm'; 
+  ?>
 
 <?php
  }
