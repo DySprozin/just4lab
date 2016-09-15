@@ -5,7 +5,15 @@ $images_thumb = '';
 
 for ($i=0; $i < count($shopimage_arr); $i++) {
   if (!empty($shopimage_arr[$i])) {
-   $images_big .= '<li><img src="'.$shopimage_arr[$i].'" width="400px" alt=""></li>';
+   $images_big .= '<li>
+   
+   <a href="'.$shopimage_arr[$i].'" class="highslide" onclick="return hs.expand(this)">
+
+   <img src="'.$shopimage_arr[$i].'" width="400px" alt="">
+   
+   </a>
+   
+   </li>';
    $images_thumb .= '<li><img src="'.$shopimage_arr[$i].'" width="50px" height="50px" alt=""></li>';
   }
 }
@@ -27,6 +35,42 @@ for ($i=0; $i < count($shopimage_arr); $i++) {
         <script type="text/javascript" src="/components/jcarousel/jcarousel.connected-carousels.js"></script>
 
 
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+<script type="text/javascript" src="/components/highslide/highslide.js"></script>
+<link rel="stylesheet" type="text/css" href="/components/highslide/highslide.css" />
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="/components/highslide/highslide-ie6.css" />
+<![endif]-->
+
+
+<script type="text/javascript">
+//<![CDATA[
+hs.registerOverlay({
+	html: '<div class="closebutton" onclick="return hs.close(this)" title="Close"></div>',
+	position: 'top right',
+	fade: 2 // fading the semi-transparent overlay looks bad in IE
+});
+
+
+hs.graphicsDir = '/components/highslide/graphics/';
+hs.wrapperClassName = 'borderless';
+//]]>
+</script>
+
+
+
+		
+		
+		
 <table border="0" style="width:100%">
 <tr>
 <td style="width:400px">
@@ -36,6 +80,14 @@ for ($i=0; $i < count($shopimage_arr); $i++) {
                 <div class="stage">
                     <div class="carousel carousel-stage">
                         <ul>
+						
+
+
+
+
+
+
+						
 <?php echo $images_big; ?>
                         </ul>
                     </div>

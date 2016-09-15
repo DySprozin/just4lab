@@ -35,10 +35,12 @@
                 });
         });
 
+var prev_next = '';
         // Setup controls for the stage carousel
         $('.prev-stage')
             .on('jcarouselcontrol:inactive', function() {
                 $(this).addClass('inactive');
+                prev_next = 'prev';
             })
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
@@ -49,7 +51,8 @@
 
         $('.next-stage')
             .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
+//                $(this).addClass('inactive');
+		prev_next = 'next';
             })
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
@@ -57,6 +60,22 @@
             .jcarouselControl({
                 target: '+=1'
             });
+
+
+if (prev_next == 'prev') {
+              $(this).jcarouselControl({
+                  target: '0'
+              });
+
+}
+if (prev_next == 'next') {
+              $(this).jcarouselControl({
+                  target: '1'
+              });
+
+}
+
+
 
         // Setup controls for the navigation carousel
         $('.prev-navigation')
@@ -80,5 +99,10 @@
             .jcarouselControl({
                 target: '+=1'
             });
+
+
+
+
+
     });
 })(jQuery);
