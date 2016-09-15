@@ -95,7 +95,7 @@ hs.wrapperClassName = 'borderless';
                         Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
                     </p-->
                     <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
-                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+                    <a href="#" class="next next-stage"  onclick="if ($(this).hasClass('goto_home')) {$(this).jcarouselControl({target: '0'}); $(this).removeClass('goto_home');} else {$(this).jcarouselControl({target: '+=1'}); }"><span>&rsaquo;</span></a>
                 </div>
 
 

@@ -51,29 +51,18 @@ var prev_next = '';
 
         $('.next-stage')
             .on('jcarouselcontrol:inactive', function() {
-//                $(this).addClass('inactive');
+                $(this).addClass('goto_home');
+
 		prev_next = 'next';
             })
             .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
+                $(this).removeClass('goto_home');
             })
             .jcarouselControl({
                 target: '+=1'
             });
 
 
-if (prev_next == 'prev') {
-              $(this).jcarouselControl({
-                  target: '0'
-              });
-
-}
-if (prev_next == 'next') {
-              $(this).jcarouselControl({
-                  target: '1'
-              });
-
-}
 
 
 
@@ -81,9 +70,11 @@ if (prev_next == 'next') {
         $('.prev-navigation')
             .on('jcarouselcontrol:inactive', function() {
                 $(this).addClass('inactive');
+                $(this).removeClass('goto_home');
             })
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
+                $(this).removeClass('goto_home');
             })
             .jcarouselControl({
                 target: '-=1'
@@ -92,9 +83,11 @@ if (prev_next == 'next') {
         $('.next-navigation')
             .on('jcarouselcontrol:inactive', function() {
                 $(this).addClass('inactive');
+                $(this).removeClass('goto_home');
             })
             .on('jcarouselcontrol:active', function() {
                 $(this).removeClass('inactive');
+                $(this).removeClass('goto_home');
             })
             .jcarouselControl({
                 target: '+=1'
