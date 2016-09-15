@@ -1,0 +1,20 @@
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+
+
+
+
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #ccc;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 300px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}

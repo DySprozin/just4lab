@@ -65,3 +65,8 @@ function spoiler_fun(title) {
  }
 }
 
+
+function AddFileUpload()
+{
+     document.getElementById("FileUploadContainer").innerHTML += '<br><input type="file" name="ShopImage[]" style="margin-left:25px;">';
+}

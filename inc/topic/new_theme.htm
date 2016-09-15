@@ -2,8 +2,10 @@
 
 include_once ROOT . 'Cls/Cls_Topic.php';
 include_once ROOT . 'components/topic/index.php';
+$new_theme_add="Новая тема";
+if ($_GET['f'] == 31) $new_theme_add="Задать вопрос";
+if ($f[11]->user == 'Гость' && $_GET['f'] != 31) {
 
-if ($f[11]->user == 'Гость') {
 ?>
 <br>
 
@@ -51,7 +53,7 @@ else {
 
 <?php
 echo '<div id="comment_kva_box" class="comment_kva_box"><div class="avatar" align="right" ><div>' . $f[11]->user . '</div><div class="vgroup">' . $f[11]->vgroup . '</div>'
-              . '</div><div class="comments_kva" style="width:80%;">' . '<div class="post_top">Новая тема:</div>
+              . '</div><div class="comments_kva" style="width:80%;">' . '<div class="post_top">'.$new_theme_add.':</div>
 			  <form method="post" class="formStyle" action="/topic/' . $_GET['f'] . '/" onsubmit="if (this.TitleTheme.value==\'\') {alert(\'Введите название темы\'); return false;}">
               <input type="text" name="TitleTheme" style="width:99%; margin-bottom:5px; margin-top:5px;">
 			   <textarea class="ckeditor" name="postText" cols="1" rows="1"></textarea><br>

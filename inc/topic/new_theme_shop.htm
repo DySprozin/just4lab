@@ -68,12 +68,25 @@ echo '
               
 <input type="text" name="TitleTheme" style="width:99%; margin-bottom:5px; margin-top:5px;">
 
-<div class="post_top">Загрузить картинку:
+<div class="post_top">Загрузите картинку, укажите цену и производителя:
 </div>
+<table border="0">
+<tr>
+<td id="FileUploadContainer"><input type="button" value="+" width="30px" onclick="AddFileUpload();"><input type="file" name="ShopImage[]" style="margin-top:10px;"></td>
+<td>
+Цена товара (руб):
 
-<input type="file" name="ShopImage" style="margin-bottom:10px; margin-top:10px;">
 
-		   
+<input type="text" name="price" style="margin-bottom:10px; margin-top:10px; width: 50px">
+
+<br>
+Производство:
+
+
+<input type="text" name="made" style="margin-bottom:10px; margin-top:10px; width: 150px" value="Россия" onmousedown="this.value=\'\'">
+</td>
+</tr>
+</table>
 <textarea class="ckeditor" name="postText" cols="1" rows="1">
 </textarea>
 <br>

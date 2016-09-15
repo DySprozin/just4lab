@@ -1,7 +1,7 @@
 ?>
 
 <?php
-
+if (empty($user)) $user = '';
 function topic_t() {
  $delete = ''; //удалить пост
  $delete_topic = ''; //Удалить тему
@@ -57,7 +57,10 @@ function topic_t() {
   $post1['post_text']=preg_replace_callback("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$]/is", "base64r_decode_off", $post1['post_text']);
  }
  
- echo '<div id="first_post" class="' . $postclass . '">' . $post1['post_text'] . '<hr style="margin:5px; margin-top: 18px;"><div align="right">' . $post1['poster_name'] . ' (написано ' . post_time($post1['post_time']) . ')</div></div>';
+// echo '<div id="first_post" class="' . $postclass . '">' . $post1['post_text'] . '<hr style="margin:5px; margin-top: 18px;"><div align="right">' . $post1['poster_name'] . ' (написано ' . post_time($post1['post_time']) . ')</div></div>';
+require_once ROOT . 'inc/topic/shop_t_body.htm';
+
+
  
  $footer_kva = '<div>&nbsp;</div>';
  
@@ -81,7 +84,10 @@ function topic_t() {
   $footer_kva .= '<div class="comment_kva_box"><div class="avatar" align="right"><div>' . $GLOBALS['user'] . '</div><div class="vgroup">' . $f[$_GET['f']]->vgroup . '</div>'
               . '</div><div class="comments_kva">' . '<div class="post_top">Ваш комментарий:</div><br>
 			  <form method="post" class="formStyle" action="." name="kva_form">
+
      <input type="hidden" name="antispam">
+	      <input type="hidden" name="topic" value=' . $_GET['t'] . '>
+		       <input type="hidden" name="forum" value=' . $_GET['f'] . '>
 			   <textarea name="postText" class="postText" cols="1" rows="1"></textarea><br>
 			   <input type="submit" name="submit" value="Отправить">
 			  </form></div></div>';

@@ -11,7 +11,10 @@ SetCookie("antispam", $rand_tmp, 0, "/topic/");
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title><?php
    echo empty($meta['mtitle']) ? $meta['title'] : $meta['mtitle'];
-   if ($meta['menu'] == '[paper]') echo ' ::: Студенческая газета РХТУ Альтернативный Менделеевец';
+   if ($meta['menu'] == '[paper]') {
+     exit();
+     echo ' ::: Студенческая газета РХТУ Альтернативный Менделеевец';
+   }
   ?></title>
   <meta name="description" content="<?php echo $meta['description']; ?>">
   <meta name="keywords" content="<?php echo $meta['keywords']; ?>">
@@ -47,20 +50,21 @@ $topic_search = '';
 if ($meta['menu'] == '/topic/') {
  if (!empty($topic_out)) $topic_out = str_repeat('&nbsp;', mt_rand(1, 10)) . $topic_out;
  if (empty($_GET['search'])) $topic_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
-                                            '<a class="menu_top" href="/topic/search">[Искать]</a><br>';
+                                            '<!--a class="menu_top" href="/topic/search">[Искать]</a--><br>';
  else $topic_search = str_repeat('&nbsp;', mt_rand(1, 10)) . 
-                     '<a href="#main_top" class="visited" onclick="blink(\'actual_title\')">[Искать]</a><br>';
+                     '<!--a href="#main_top" class="visited" onclick="blink(\'actual_title\')">[Искать]</a--><br>';
                      
  $htopic = '<div class="htopic">
             ' . $topic_out . '
             ' . $topic_search . '
           </div>';
 }
+
 if ($meta['menu'] != '/') { ?>
-   <a href="/"><img class="logo_img" src="/img/logo.gif" alt="4lab"></a>
+   <a href="/"><img class="logo_img" src="/img/logo.jpg" alt="4lab"></a>
 <?php }
 else { ?>
-<img class="logo_img" src="/img/logo.gif" alt="4lab">
+<img class="logo_img" src="/img/logo.jpg" alt="4lab">
 <?php }?>
   </div>
  </div>

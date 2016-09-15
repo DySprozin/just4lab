@@ -1,0 +1,22 @@
+
+
+
+<tr>
+<td>
+<?php 
+
+echo '<a href="./' . $topic['topic_id'] . '">' . $topic['topic_title'] . '</a>'; 
+$shop_image = explode('#', $topic['shop_image']);
+$shop_image = $shop_image[0];
+?>
+</td>
+<td class="img">
+<img src="<?php echo $shop_image; ?>" alt="" class="img75" width="100px" />
+</td>
+<td><?php if (empty($topic['made'])) echo 'Россия'; else echo $topic['made'];?></td>
+<td class="nw"><span class="item__avail_available">В наличии</span></td>
+<td class="price min">
+<?php echo $topic['price']; ?>
+</td>
+<td class="min last"><div class="a2c_wrap"><button onclick="alert('Для заказа отправьте письмо на manager@4lab.su.')">Заказать</button></div></td>
+</tr>

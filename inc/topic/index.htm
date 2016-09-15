@@ -4,6 +4,7 @@
 <?php
 
 function topic_index() {
+
  $link = mysql_query("SELECT * FROM `posts` WHERE `post_status`!='3' AND `forum_id`!='30' AND `forum_id`!='255' ORDER BY `post_time` DESC") or errDB($link);
  $ch = 0;
  $posts = array();
@@ -19,8 +20,7 @@ function topic_index() {
   
   $topic = mysql_fetch_assoc($linkt);
 if (!$topic) break;
-  if (mb_strlen(trim(strip_tags($post['post_text']), "\x00..\x1F"), "utf-8") < $GLOBALS['maxlen_main_posts'] ||
-     !strpbrk($f[$idf]->get_chmods(), 'rED') ||
+  if (!strpbrk($f[$idf]->get_chmods(), 'rED') ||
 	 $f[$idf]->title == '' ||
 	 in_array($idt.'', $idts)) continue; //Чтобы темы не повторялись
 	 
@@ -32,11 +32,13 @@ if (!$topic) break;
   $posters[] = $post['poster_name'];
   $idfs[] = $idf;
   $ch++;
+
  }
 
  $Tidy = new tidy();
  $Tidy_config = array('clean' => true, 'show-body-only' => true); 
  foreach($posts as $id => $post) {
+ 
   $post = strip_tags($post, "<br><div><font><span><b><i><s><a><strong>");
   if(mb_strlen($post, "utf-8") > 800) {
    $post = mb_substr($post, 0, 800, "utf-8") . '...';

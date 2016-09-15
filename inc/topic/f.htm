@@ -40,7 +40,7 @@ function topic_f() {
   
   echo '<div style="background:#f0f0f0;">' . 
       '<a href="./' . $topic['topic_id'] . '">' . $topic['topic_title'] . '</a>' .
-	   '<div class="foright"><span class="foall"><a href="' . $topic['topic_id'] . '/all">все</a></span>&nbsp;<span class="nkva"><a href="' . $topic['topic_id'] . '/kva">ква!</a></span></div></div>
+	   '<div class="foright"><span class="foall"><a href="' . $topic['topic_id'] . '/all">все</a></span>&nbsp;<span class="nkva"><a href="' . $topic['topic_id'] . '/kva">new!</a></span></div></div>
 	   <div style="height: 5px; background-image: url(\'/topic/img/mtail.gif\'); background-repeat: no-repeat;"></div>
 	   <div style="font-size:10pt">' . $topic['topic_last_poster'] . ' (' . $dt_last_date . ' в ' . $dt_last_time . '), <i>автор темы: </i>' . $topic['topic_poster_name'] . ' (' . $dt_create_date . ' в ' . $dt_create_time . ')</div><br>';
  } 

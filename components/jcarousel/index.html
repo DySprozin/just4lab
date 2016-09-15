@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Connected Carousels - jCarousel Examples</title>
+
+        <!-- Shared assets -->
+
+
+        <!-- Example assets -->
+
+
+        <script type="text/javascript" src="./vendor/jquery/jquery.js"></script>
+        <script type="text/javascript" src="./dist/jquery.jcarousel.min.js"></script>
+
+        <script type="text/javascript" src="jcarousel.connected-carousels.js"></script>
+
+		<style>
+@import '//fonts.googleapis.com/css?family=Lato:400,400italic|Arvo:700,400,400italic';
+
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+    color: #4E443C;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2, h2 a {
+    color: #F14E32;
+}
+
+h3, h3 a {
+  color: #0388A6;
+}
+
+a {
+  color: #0388A6;
+}
+
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+    max-width: 620px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+
+		</style>
+		
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <h1>Connected Carousels</h1>
+            
+            <p>This example shows how to connect two carousels together so that one carousels acts as a navigation for the other.</p>
+            
+            <div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+                            <li><img src="./_shared/img/img1.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="./_shared/img/img2.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="./_shared/img/img3.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="./_shared/img/img4.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="./_shared/img/img5.jpg" width="600" height="400" alt=""></li>
+                            <li><img src="./_shared/img/img6.jpg" width="600" height="400" alt=""></li>
+                        </ul>
+                    </div>
+                    <p class="photo-credits">
+                        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+                    </p>
+                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+                </div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="./_shared/img/img1.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="./_shared/img/img2.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="./_shared/img/img3.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="./_shared/img/img4.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="./_shared/img/img5.jpg" width="50" height="50" alt=""></li>
+                            <li><img src="./_shared/img/img6.jpg" width="50" height="50" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

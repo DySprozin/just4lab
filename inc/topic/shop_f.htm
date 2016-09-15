@@ -28,6 +28,16 @@ function topic_f() {
 
  if ($page == 1) $topics = array_merge($stopics, $topics);
 
+ echo '<table class="itemlist" id="itemlist" style="width:100%">';
+ echo '
+ <tr>
+<th>Наименование / Характеристики</th>
+<th></th>
+<th title="Производитель">Пр-во</th>
+<th>Наличие </th>
+<th>Цена</th>
+<th></th>
+</tr>';
  foreach ($topics as $topic) {
   $dt_create = new DateTime($topic['topic_time']);
   $dt_create_date = $dt_create->format('d.m.Y');
@@ -38,14 +48,17 @@ function topic_f() {
   $dt_last_time = $dt_last->format('H:i');
   
   
-  echo '<div style="background:#f0f0f0;">' . 
+ /* echo '<div style="background:#f0f0f0;">' . 
       '<a href="./' . $topic['topic_id'] . '">' . $topic['topic_title'] . '</a>' .
 	   '<div class="foright">&nbsp;</div></div>
 	   <div style="height: 5px; background-image: url(\'/topic/img/mtail.gif\'); background-repeat: no-repeat;"></div>
-	   <div style="font-size:10pt">' . $topic['topic_last_poster'] . ' (' . $dt_last_date . ' в ' . $dt_last_time . '), <i>автор темы: </i>' . $topic['topic_poster_name'] . ' (' . $dt_create_date . ' в ' . $dt_create_time . ')</div><br>';
+	   <div style="font-size:10pt">' . $topic['topic_last_poster'] . ' (' . $dt_last_date . ' в ' . $dt_last_time . '), <i>автор темы: </i>' . $topic['topic_poster_name'] . ' (' . $dt_create_date . ' в ' . $dt_create_time . 
+	   ')</div><br>';*/
+	   
+	include ROOT . 'inc/topic/shop_list.htm';
  } 
  
- echo '<br><div align="right">' . $GLOBALS['topic_pages'] . '</div>';
+ echo '</table><br><div align="right">' . $GLOBALS['topic_pages'] . '</div>';
  
 }
 

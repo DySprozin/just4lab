@@ -1,9 +1,12 @@
 <?php
 define ('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/');
+if (strpos($_SERVER['REQUEST_URI'], "shop")) $is_shop = true;
+
 include ROOT . 'conf/main_conf.php';
 
 include ROOT . 'Cls/Cls_Topic.php';
-if (strpos($_SERVER['REQUEST_URI'], "shop")) include ROOT . 'components/topic/shop_index.php';
+
+if ($is_shop == true) include ROOT . 'components/topic/shop_index.php';
 else include ROOT . 'components/topic/index.php';
 
 include ROOT . 'inc/header_common.htm';
@@ -23,8 +26,7 @@ include ROOT . 'inc/header_common.htm';
 	<?php echo $topic_title; ?>
    </div>
   </td>
-  <td class="<?php echo $main_css; ?>_right_top">&nbsp;
-  </td>
+  <?php if (!$is_shop) echo '<td class=" '.$main_css.'_right_top" style="width:1px">&nbsp;</td>'; ?>
  </tr>
  <tr>
   <td class="<?php echo $main_css;?>_left">
@@ -34,24 +36,27 @@ include ROOT . 'inc/header_common.htm';
 <?php eval($topic_body); ?>
    </div>
   </td>
-  
-  <td class="<?php echo $main_css;?>_right">
-
-<?php
+<?php  
+if (!$is_shop) {
+  echo '<td class="'.$main_css.'_right">';
+ 
+ 
  if ($main_css == "border") {
-  echo $f[30]->topic();
+  if (strpbrk($f[30]->get_chmods(), 'ED')) echo $f[30]->topic();
+  echo $f[31]->topic();
   echo $f[11]->topic();
+ }
+ echo '</td>';
  }
 ?>
 
-  </td>
+  
  </tr>
  <tr>
   <td class="border_left_bottom">
    &nbsp;
   </td>
-  <td class="<?php echo $main_css; ?>_right_bottom">&nbsp;
-  </td>
+<?php  if (!$is_shop) '<td class="'.$main_css.'_right_bottom">&nbsp;</td>'; ?>
  </tr>
 </table>
 

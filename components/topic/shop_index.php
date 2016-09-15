@@ -31,7 +31,7 @@ $purifier = new HTMLPurifier($config_tmp);
 if (isset($_GET['f']) && ($_GET['f'] == 23 || $_GET['f'] == 11) && $_SERVER['REMOTE_ADDR'][0] == '7') {fwrite(fopen('text', 'a+'), print_r($GLOBALS, true));
 //exit();
 }
-$topic_title = 'Последние &laquo;Ква!&raquo;';
+$topic_title = 'Последние сообщения';
 $topic_body = '';
 
 
@@ -49,6 +49,7 @@ if (!empty($_POST['login']) && !empty($_POST['password'])) {
  $link = mysql_query("SELECT * FROM users WHERE username='" . mysql_real_escape_string($login) . "' AND user_password='" . mysql_real_escape_string($password) . "';") or errDB();
  $auth = mysql_fetch_assoc($link);
  if (empty($auth['username'])) {
+  $user = '';
   $error_auth = 1;
  }
  else {
@@ -65,6 +66,7 @@ elseif (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
  $link = mysql_query("SELECT * FROM users WHERE username='" . mysql_real_escape_string($login) . "' AND user_password='" . mysql_real_escape_string($password) . "';") or errDB();
  $auth = mysql_fetch_assoc($link);
  if (empty($auth['username'])) {
+  $user = '';
   $error_auth = 1;
  }
  else $user = $auth['username'];
@@ -173,26 +175,33 @@ $main_css = "border";
 
 
  if (empty($_GET['f']) && empty($_GET['search'])) {
+	 
   $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
  }
- elseif (!empty($_GET['f']) && empty($_GET['t'])) {
+ elseif (!empty($_GET['f']) && empty($_GET['t']) && empty($_POST['topic'])) {
+
+	 //exit($_POST['postText']);
   if (empty($f[$_GET['f']]->title) || !strpbrk($f[$_GET['f']]->get_chmods(), 'rED')) {
-   $topic_title = '<span style="color:red">Такого квака не найдено :-(</span>';
+   $topic_title = '<span style="color:red">Ничего не найдено :-(</span>';
    $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
   }
   //Пока создают темы только модеры/админы
   elseif (!empty($_POST['postText']) && strpbrk($f[$_GET['f']]->get_chmods(), 'D') && !empty($_POST['TitleTheme'])) {
    
    $theme_title=strip_tags($_POST['TitleTheme']);
-   
+   $price = (int)$_POST['price'];
+   $made = $_POST['made'];
    if (!strpbrk($f[$_GET['f']]->get_chmods(), 'D')) $post_text = strip_tags($_POST['postText']); //Только админы и модеры могут создавать крутые тексты
    else $post_text = $purifier->purify($_POST['postText']);
 
    $post_text = str_replace(array("\r", "\r\n"), '<br>', $post_text);
 
+   include_once ROOT . 'components/topic/upload_shop_img.php';
+
+   
    mysql_query("INSERT INTO `topics`
-               (`topic_title`, `topic_poster_name`, `topic_time`, `topic_views`, `forum_id`, `topic_status`, `topic_last_post_id`, `posts_count`, `sticky`, `topic_last_post_time`, `topic_last_poster`)
-               VALUES ('$theme_title', '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', now(), '0', " . (int)$_GET['f'] . ", '0', '1', '0', '0', now(), '" . mysql_real_escape_string($f[$_GET['f']]->user) . "');") or errDB($link);
+               (`topic_title`, `topic_poster_name`, `topic_time`, `topic_views`, `forum_id`, `topic_status`, `topic_last_post_id`, `posts_count`, `sticky`, `topic_last_post_time`, `topic_last_poster`, `shop_image`, `price`, `made`)
+               VALUES ('$theme_title', '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', now(), '0', " . (int)$_GET['f'] . ", '0', '1', '0', '0', now(), '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', '".$shopimage."', '".$price."', '".mysql_real_escape_string($made)."');") or errDB($link);
    $link = mysql_query ("SELECT * FROM `topics` ORDER BY `topic_id` DESC") or errDB($link);
    $tmp = mysql_fetch_assoc($link);
    $tmp_topic = (int)$tmp['topic_id'];
@@ -230,28 +239,31 @@ $main_css = "border";
   }
    
  }
- elseif (!empty($_GET['f']) && !empty($_GET['t'])) {
+ elseif (!empty($_GET['f']) && (!empty($_GET['t']) || !empty($_POST['topic']))) {
   if (!strpbrk($f[$_GET['f']]->get_chmods(), 'rED')) { //Человек должен иметь право на чтение (r), либо быть модером
-   $topic_title = '<span style="color:red">Такого квака не найдено :-(</span>';
+   $topic_title = '<span style="color:red">Ничего не найдено :-(</span>';
    $topic_body = join(file(ROOT . 'inc/topic/shop_index.htm'));
+   
   }
   else {
+	  
    if (!empty($_POST['postText']) && strpbrk($f[$_GET['f']]->get_chmods(), 'w') && empty($_POST['CreateTheme'])) {
+	   
     if (!strpbrk($f[$_GET['f']]->get_chmods(), 'D')) $post_text = strip_tags($_POST['postText']); //Только админы и модеры могут создавать крутые тексты
     else $post_text = $purifier->purify($_POST['postText']);
 
 	$post_text = str_replace(array("\r", "\r\n"), '<br>', $post_text);
     mysql_query("INSERT INTO `posts` 
 	            (`forum_id`, `topic_id`, `poster_name`, `post_text`, `post_time`, `poster_ip`, `post_status`) 
-	             VALUES ('" . (int)$_GET['f'] . "', '" . (int)$_GET['t'] . "', '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', '" . mysql_real_escape_string($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
-	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_id` DESC") or errDB($link);
+	             VALUES ('" . (int)$_GET['f'] . "', '" . (int)$_POST['topic'] . "', '" . mysql_real_escape_string($f[$_GET['f']]->user) . "', '" . mysql_real_escape_string($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
+	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_POST['topic'] . "' ORDER BY `post_id` DESC") or errDB($link);
 	$tmp = mysql_fetch_assoc($link);
 	mysql_query("UPDATE `topics` SET
                  `topic_last_post_id` = '" . (int)$tmp['post_id'] . "',
                  `posts_count` = `posts_count` + 1,
                  `topic_last_post_time` = now(),
                  `topic_last_poster` = '" . mysql_real_escape_string($f[$_GET['f']]->user) . "'
-                 WHERE `topic_id` = '" . (int)$_GET['t'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
+                 WHERE `topic_id` = '" . (int)$_POST['topic'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
 	mysql_query("UPDATE `forums` SET
                  `posts_count` = `posts_count` + 1
                  WHERE `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
@@ -267,14 +279,14 @@ $main_css = "border";
    
    //Удаление поста
    if (!empty($_GET['delpost']) && strpbrk($f[$_GET['f']]->get_chmods(), 'D')) {
-   	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_id` DESC") or errDB($link);
+   	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_POST['topic'] . "' ORDER BY `post_id` DESC") or errDB($link);
 	if (mysql_num_rows($link) == 1 || $_GET['delpost'] < 1) {
 	 Header('Location: ' . $_SERVER['HTTP_REFERER']);
      exit();
 	}
 
     mysql_query ("DELETE FROM `posts` WHERE `post_id` = '" . (int)$_GET['delpost'] . "';") or errDB($link);
-   	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_id` DESC") or errDB($link);
+   	$link = mysql_query ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_POST['topic'] . "' ORDER BY `post_id` DESC") or errDB($link);
 	$tmp = mysql_fetch_assoc($link);
 	
     mysql_query ("UPDATE `topics` SET 
@@ -282,7 +294,7 @@ $main_css = "border";
 				  `posts_count` = `posts_count` - 1, 
 				  `topic_last_post_time` = '" . $tmp['post_time'] . "', 
 				  `topic_last_poster` = '" . $tmp['poster_name'] . "' 
-				  WHERE `topic_id` = '" . (int)$_GET['t'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
+				  WHERE `topic_id` = '" . (int)$_POST['topic'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
     mysql_query ("UPDATE `forums` SET `posts_count` = `posts_count` - 1 WHERE `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
     mysql_query ("UPDATE `users` SET `num_posts` = `num_posts` - 1 WHERE `username` = '" . mysql_real_escape_string($f[$_GET['f']]->user) . "';") or errDB($link);
 	Header('Location: /shop/');
@@ -325,10 +337,10 @@ $main_css = "border";
   }
  }
  elseif (!empty($_GET['search'])) {
-  $search_who = array('чернику','кувшинки','клюкву','жуков','лягушек','жабу','ужа','улиток','куропатку');
+  $search_who = array('','');
   $tmp = array_rand($search_who);
   if (empty($_POST['searchtext'])) {
-   $topic_title = 'Искать в болоте (' . $search_who[$tmp] . ')';
+   $topic_title = 'Искать:  (' . $search_who[$tmp] . ')';
    $m_title = 'Поиск';
   }
   else {
@@ -339,3 +351,5 @@ $main_css = "border";
  }
  
 if (!isset($pages)) $pages = '<img src="/img/dot.gif" alt="" width="20px" height="20px">';
+
+

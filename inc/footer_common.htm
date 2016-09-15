@@ -13,7 +13,7 @@ if (preg_match('#^/paper/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['t'])) 
 
 <?php
 if (preg_match('#^/topic/#isU', $_SERVER['SCRIPT_NAME']) && !empty($_GET['f']) && empty($_GET['t'])) {
- if (strpbrk($f[$_GET['f']]->get_chmods(), 'D')) {
+ if (strpbrk($f[$_GET['f']]->get_chmods(), 'GD')) {
 ?>
 
   <!-- comment form -->
