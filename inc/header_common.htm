@@ -18,7 +18,7 @@ SetCookie("antispam", $rand_tmp, 0, "/topic/");
   ?></title>
   <meta name="description" content="<?php echo $meta['description']; ?>">
   <meta name="keywords" content="<?php echo $meta['keywords']; ?>">
-  <link rel="stylesheet" type="text/css" href="<?php echo $meta['css']; ?>?c=04111233">
+  <link rel="stylesheet" type="text/css" href="<?php echo $meta['css']; ?>?c=04111288">
   <script type="text/javascript">
    var js_flask_off = <?php echo isset($_COOKIE['js_flask_off']) ? '1' : '0'; ?>;
    if (js_flask_off == 0) document.write('<link rel="stylesheet" type="text/css" href="/css/js_flask.css?h=33333">');
@@ -116,6 +116,8 @@ if ($_SERVER['REQUEST_URI'] == '/shop/') { ?>
 <?php }
 
 
+
+
 if ($meta['menu'] == '/topic/' && empty($_SERVER['QUERY_STRING'])) { ?>
   <div class="menu_top_unit">
     <img class="img_dot" src="/img/dot.gif" alt="Поддержка"><img class="img_big" src="/img/topic.gif" alt="Поддержка"><br>
@@ -128,5 +130,19 @@ if ($meta['menu'] == '/topic/' && empty($_SERVER['QUERY_STRING'])) { ?>
     <span class="url">Поддержка<br>(помощь и общение)</span>
    </a>
   </div>
-<?php } ?>
+<?php } 
+
+if ($_SERVER['REQUEST_URI'] == '/about/') { ?>
+  <div class="menu_top_unit">
+    <img class="img_dot" src="/img/autors.gif" alt="О компании" title="О компании"><img class="img_big" src="/img/autors.gif" alt="О компании" title="О компании">
+	<span class="js_off_menu">О компании</span>
+  </div>
+<?php } else { ?>
+  <div class="menu_top_unit">
+   <a href="/about/" class="menu_top">
+    <img class="img_dot" src="/img/dot.gif" alt="О компании"><img class="img_small" src="/img/autors.gif" alt="О компании"><br><span class="url">О компании</span></a>
+  </div>
+<?php }
+
+?>
  </div>
