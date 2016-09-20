@@ -64,7 +64,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file2)) {
-        Header("Location: /upload.php?url=http://4lab.ru/uploads/". $target_file3);
+        Header("Location: /upload.php?url=https://4lab.su/uploads/". $target_file3);
     } else {
         echo "Sorry, there was an error uploading your file.";
     }
