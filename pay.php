@@ -10,9 +10,9 @@
 
 <!-- ОБЯЗАТЕЛЬНАНЫЕ ПОЛЯ (все параметры яндекс.кассы регистрозависимые) -->
 <input type="hidden" name="shopId" value="64014">
-<input type="hidden" name="scid" value="50215">
+<input type="hidden" name="scid" value="541865">
 Идентификатор клиента:<br>
-<input type=text name="customerNumber" size="64" value="Гость-12345"><br><br> 
+<input type=text name="customerNumber" size="64" value="testtesttest"><br><br> 
 Сумма (руб.):<br> 
 <input type=text name="sum" size="64" value="10"><br><br>
 
