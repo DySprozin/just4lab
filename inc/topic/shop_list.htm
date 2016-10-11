@@ -14,9 +14,10 @@ $shop_image = $shop_image[0];
 <img src="<?php echo $shop_image; ?>" alt="" class="img75" width="100px" />
 </td>
 <td><?php if (empty($topic['made'])) echo 'Россия'; else echo $topic['made'];?></td>
-<td class="nw"><span class="item__avail_available">В наличии</span></td>
+<?php if ($topic['price']) echo '<td class="nw"><span class="item__avail_available">В наличии</span></td>';
+else echo '<td class="nw"><span class="item__avail_available">Под заказ</span></td>'; ?>
 <td class="price min">
-<?php echo $topic['price']; ?>
+<?php if ($topic['price']) echo $topic['price']; ?>
 </td>
-<td class="min last"><div class="a2c_wrap"><button onclick="alert('Для заказа отправьте письмо на manager@4lab.su.')">Заказать</button></div></td>
+<td class="min last"><?php if ($topic['price']) echo '<div class="a2c_wrap"><a href="./' . $topic['topic_id'] . '"><button>Заказать</button></a></div>';?></td>
 </tr>
