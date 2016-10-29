@@ -1,0 +1,1680 @@
+[2016-09-21 06:11:19] Start checkOrder
+[2016-09-21 06:11:19] Security type PKCS7
+[2016-09-21 06:11:19] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T06:11:19.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:27:23] Start checkOrder
+[2016-09-21 07:27:23] Security type PKCS7
+[2016-09-21 07:27:23] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:27:23.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:45:46] Start checkOrder
+[2016-09-21 07:45:46] Security type PKCS7
+[2016-09-21 07:45:46] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:45:46.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:52:56] Start checkOrder
+[2016-09-21 07:52:56] Security type PKCS7
+[2016-09-21 07:52:56] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:52:56.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:54:29] Start checkOrder
+[2016-09-21 07:54:29] Security type PKCS7
+[2016-09-21 07:54:29] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:54:29.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:57:56] Start checkOrder
+[2016-09-21 07:57:56] Security type PKCS7
+[2016-09-21 07:57:56] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:57:56.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 07:59:30] Start checkOrder
+[2016-09-21 07:59:30] Security type PKCS7
+[2016-09-21 07:59:30] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T07:59:30.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2016-09-21 08:06:01] Start checkOrder
+[2016-09-21 08:06:01] Security type PKCS7
+[2016-09-21 08:06:01] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:06:01.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 08:09:47] Start checkOrder
+[2016-09-21 08:09:47] Security type PKCS7
+[2016-09-21 08:09:47] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:09:47.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 08:11:00] Start checkOrder
+[2016-09-21 08:11:00] Security type PKCS7
+[2016-09-21 08:11:00] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:11:00.000-04:00" code="200"  invoiceId="" shopId="64014"/>
+[2016-09-21 08:12:05] Start checkOrder
+[2016-09-21 08:12:05] Security type MD5
+[2016-09-21 08:12:05] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 10.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:12:05.684+03:00
+    [depositNumber] => 5i9GMKQo7Wj6B6Tas4MaDUUWrHUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:05.546+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151153_00000_64014
+    [unilabel] => 1f748b53-0009-5000-8000-000014e3e265
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664585
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 9.65
+    [md5] => CDFBFC92E699A73B8F9CBD2620473370
+)
+
+[2016-09-21 08:12:05] String to md5: checkOrder;10.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:12:05] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:12:05.000-04:00" code="100" message="The amount should be more than 100 rubles." invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 08:12:43] Start checkOrder
+[2016-09-21 08:12:43] Security type MD5
+[2016-09-21 08:12:43] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:12:43.730+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 62E2DFF68B1CAFEC2014163AE19D68D8
+)
+
+[2016-09-21 08:12:43] String to md5: checkOrder;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:12:43] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:12:43.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 08:12:43] Start checkOrder
+[2016-09-21 08:12:43] Security type MD5
+[2016-09-21 08:12:43] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:12:44.163+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 08:12:43] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:12:43] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:12:43.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 08:13:46] Start checkOrder
+[2016-09-21 08:13:46] Security type MD5
+[2016-09-21 08:13:46] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:13:46.874+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 08:13:46] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:13:46] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:13:46.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 08:28:48] Start checkOrder
+[2016-09-21 08:28:48] Security type MD5
+[2016-09-21 08:28:48] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:28:48.437+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 08:28:48] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:28:48] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:28:48.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 08:58:48] Start checkOrder
+[2016-09-21 08:58:48] Security type MD5
+[2016-09-21 08:58:48] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T15:58:48.799+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 08:58:48] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 08:58:48] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T08:58:48.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 09:28:52] Start checkOrder
+[2016-09-21 09:28:52] Security type MD5
+[2016-09-21 09:28:52] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T16:28:52.482+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 09:28:52] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 09:28:52] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T09:28:52.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 09:58:52] Start checkOrder
+[2016-09-21 09:58:52] Security type MD5
+[2016-09-21 09:58:52] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T16:58:52.530+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 09:58:52] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 09:58:52] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T09:58:52.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-21 10:28:52] Start checkOrder
+[2016-09-21 10:28:52] Security type MD5
+[2016-09-21 10:28:52] Request: Array
+(
+    [orderNumber] => order777
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1218
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-21T15:12:43.711+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-21T17:28:52.873+03:00
+    [depositNumber] => H4xryQAoOb2J9gRVu20Nh3YHxYEZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-21T15:12:43.538+03:00
+    [sk] => ub384fc8c948b11d9ff82cd46ae7e67e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => order777_210916151230_00000_64014
+    [unilabel] => 1f748ced-0009-5000-8000-000014e3fb84
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059664656
+    [invoiceId] => 2000000908668
+    [shopSumAmount] => 965.00
+    [md5] => 94EC92C8247EBA74CC36B2D648F6423D
+)
+
+[2016-09-21 10:28:52] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000908668;testtesttest;Swr2ROOTjBv45aS
+[2016-09-21 10:28:52] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-21T10:28:52.000-04:00" code="0"  invoiceId="2000000908668" shopId="64014"/>
+[2016-09-23 10:16:24] Start checkOrder
+[2016-09-23 10:16:24] Security type MD5
+[2016-09-23 10:16:24] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T17:16:24.462+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => 25FFDDD55CA7065F10BCB44D0C19B2C6
+)
+
+[2016-09-23 10:16:24] String to md5: checkOrder;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 10:16:24] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T10:16:24.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 10:16:24] Start checkOrder
+[2016-09-23 10:16:24] Security type MD5
+[2016-09-23 10:16:24] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T17:16:25.011+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 10:16:24] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 10:16:24] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T10:16:24.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 10:17:26] Start checkOrder
+[2016-09-23 10:17:26] Security type MD5
+[2016-09-23 10:17:26] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T17:17:26.447+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 10:17:26] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 10:17:26] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T10:17:26.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 10:32:28] Start checkOrder
+[2016-09-23 10:32:28] Security type MD5
+[2016-09-23 10:32:28] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T17:32:28.671+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 10:32:28] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 10:32:28] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T10:32:28.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 11:02:30] Start checkOrder
+[2016-09-23 11:02:30] Security type MD5
+[2016-09-23 11:02:30] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T18:02:30.366+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 11:02:30] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 11:02:30] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T11:02:30.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 11:32:33] Start checkOrder
+[2016-09-23 11:32:33] Security type MD5
+[2016-09-23 11:32:33] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T18:32:34.079+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 11:32:33] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 11:32:33] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T11:32:33.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 12:02:35] Start checkOrder
+[2016-09-23 12:02:35] Security type MD5
+[2016-09-23 12:02:35] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T19:02:35.654+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 12:02:35] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 12:02:35] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T12:02:35.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-23 12:32:41] Start checkOrder
+[2016-09-23 12:32:41] Security type MD5
+[2016-09-23 12:32:41] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-23T17:16:24.673+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-23T19:32:41.943+03:00
+    [depositNumber] => y2td4xjXBGUlrp8duEE7t3luUdsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-23T17:16:24.364+03:00
+    [sk] => yb56626dd63f3dcae7676f226064ec168
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_230916171612_00000_64014
+    [unilabel] => 1f774ceb-0009-5000-8000-000014ff7250
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059882086
+    [invoiceId] => 2000000913235
+    [shopSumAmount] => 965.00
+    [md5] => A418D55B71BF58F1FC345A47DFB06077
+)
+
+[2016-09-23 12:32:41] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913235;testtesttest;Swr2ROOTjBv45aS
+[2016-09-23 12:32:41] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-23T12:32:41.000-04:00" code="0"  invoiceId="2000000913235" shopId="64014"/>
+[2016-09-24 17:46:57] Start checkOrder
+[2016-09-24 17:46:57] Security type MD5
+[2016-09-24 17:46:57] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:46:57.675+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => EF5C83B7B622B2CDC24AF85990F80195
+)
+
+[2016-09-24 17:46:57] String to md5: checkOrder;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:46:57] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:46:57.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 17:46:58] Start checkOrder
+[2016-09-24 17:46:58] Security type MD5
+[2016-09-24 17:46:58] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:46:58.261+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 17:46:58] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:46:58] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:46:58.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 17:48:00] Start checkOrder
+[2016-09-24 17:48:00] Security type MD5
+[2016-09-24 17:48:00] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:48:00.340+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 17:48:00] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:48:00] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:48:00.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 17:48:00] Start checkOrder
+[2016-09-24 17:48:00] Security type MD5
+[2016-09-24 17:48:00] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:48:00.973+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => 78A304E4A0C9C4631D68E532E27FD09A
+)
+
+[2016-09-24 17:48:00] String to md5: checkOrder;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:48:00] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:48:00.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 17:48:01] Start checkOrder
+[2016-09-24 17:48:01] Security type MD5
+[2016-09-24 17:48:01] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:48:01.411+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 17:48:01] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:48:01] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:48:01.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 17:49:01] Start checkOrder
+[2016-09-24 17:49:01] Security type MD5
+[2016-09-24 17:49:01] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:01.953+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 17:49:01] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:49:01] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:49:01.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 17:49:05] Start checkOrder
+[2016-09-24 17:49:05] Security type MD5
+[2016-09-24 17:49:05] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:05.514+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => DF7120D40227D66CBBC6A5DE0B1BA780
+)
+
+[2016-09-24 17:49:05] String to md5: checkOrder;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:49:05] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:49:05.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 17:49:05] Start checkOrder
+[2016-09-24 17:49:05] Security type MD5
+[2016-09-24 17:49:05] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:05.816+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 17:49:05] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:49:05] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:49:05.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 17:50:06] Start checkOrder
+[2016-09-24 17:50:06] Security type MD5
+[2016-09-24 17:50:06] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:50:06.386+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 17:50:06] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 17:50:06] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T17:50:06.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 18:03:01] Start checkOrder
+[2016-09-24 18:03:01] Security type MD5
+[2016-09-24 18:03:01] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:03:01.080+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 18:03:01] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:03:01] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:03:01.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 18:04:02] Start checkOrder
+[2016-09-24 18:04:02] Security type MD5
+[2016-09-24 18:04:02] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:04:02.674+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 18:04:02] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:04:02] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:04:02.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 18:05:08] Start checkOrder
+[2016-09-24 18:05:08] Security type MD5
+[2016-09-24 18:05:08] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:05:08.731+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 18:05:08] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:05:08] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:05:08.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 18:33:01] Start checkOrder
+[2016-09-24 18:33:01] Security type MD5
+[2016-09-24 18:33:01] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:33:01.468+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 18:33:01] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:33:01] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:33:01.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 18:34:03] Start checkOrder
+[2016-09-24 18:34:03] Security type MD5
+[2016-09-24 18:34:03] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:34:03.619+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 18:34:03] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:34:03] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:34:03.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 18:35:09] Start checkOrder
+[2016-09-24 18:35:09] Security type MD5
+[2016-09-24 18:35:09] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:35:09.157+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 18:35:09] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 18:35:09] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T18:35:09.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 19:03:04] Start checkOrder
+[2016-09-24 19:03:04] Security type MD5
+[2016-09-24 19:03:04] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:03:04.485+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 19:03:04] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:03:04] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:03:04.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 19:04:06] Start checkOrder
+[2016-09-24 19:04:06] Security type MD5
+[2016-09-24 19:04:06] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:04:07.125+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 19:04:06] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:04:06] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:04:06.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 19:05:10] Start checkOrder
+[2016-09-24 19:05:10] Security type MD5
+[2016-09-24 19:05:10] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:05:10.581+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 19:05:10] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:05:10] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:05:10.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 19:33:05] Start checkOrder
+[2016-09-24 19:33:05] Security type MD5
+[2016-09-24 19:33:05] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:33:05.435+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 19:33:05] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:33:05] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:33:05.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 19:34:11] Start checkOrder
+[2016-09-24 19:34:11] Security type MD5
+[2016-09-24 19:34:11] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:34:11.353+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 19:34:11] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:34:11] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:34:11.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 19:35:14] Start checkOrder
+[2016-09-24 19:35:14] Security type MD5
+[2016-09-24 19:35:14] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:35:14.510+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 19:35:14] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 19:35:14] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T19:35:14.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-24 20:03:06] Start checkOrder
+[2016-09-24 20:03:06] Security type MD5
+[2016-09-24 20:03:06] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:03:06.681+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+
+[2016-09-24 20:03:06] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913910;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 20:03:06] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T20:03:06.000-04:00" code="0"  invoiceId="2000000913910" shopId="64014"/>
+[2016-09-24 20:04:11] Start checkOrder
+[2016-09-24 20:04:11] Security type MD5
+[2016-09-24 20:04:11] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:04:11.640+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+
+[2016-09-24 20:04:11] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913911;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 20:04:11] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T20:04:11.000-04:00" code="0"  invoiceId="2000000913911" shopId="64014"/>
+[2016-09-24 20:05:14] Start checkOrder
+[2016-09-24 20:05:14] Security type MD5
+[2016-09-24 20:05:14] Request: Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:05:14.708+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+
+[2016-09-24 20:05:14] String to md5: paymentAviso;1000.00;10643;1003;64014;2000000913912;testtesttest;Swr2ROOTjBv45aS
+[2016-09-24 20:05:14] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-24T20:05:14.000-04:00" code="0"  invoiceId="2000000913912" shopId="64014"/>
+[2016-09-25 03:12:43] Start checkOrder
+[2016-09-25 03:12:43] Security type MD5
+[2016-09-25 03:12:43] Request: Array
+(
+    [orderSumAmount] => 100000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T10:12:43.114+03:00
+    [depositNumber] => VLAEop1odwqZiasd5mfXEmiIqboZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T10:12:42.847+03:00
+    [sk] => u1cd1e26757485ecfa309aabc5644e7e1
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916101201_00000_64014
+    [unilabel] => 1f798c81-0009-5000-8000-00001511c2cf
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059930036
+    [invoiceId] => 2000000913962
+    [shopSumAmount] => 96500.00
+    [md5] => C74D14B9A0C9E3BF5B2D85210C2EA0F4
+)
+
+[2016-09-25 03:12:43] String to md5: checkOrder;100000.00;10643;1003;64014;2000000913962;testtesttest;Swr2ROOTjBv45aS
+[2016-09-25 03:12:43] Response: <?xml version="1.0" encoding="UTF-8"?><checkOrderResponse performedDatetime="2016-09-25T03:12:43.000-04:00" code="0"  invoiceId="2000000913962" shopId="64014"/>
+[2016-09-25 03:12:43] Start paymentAviso
+[2016-09-25 03:12:43] Security type MD5
+[2016-09-25 03:12:43] Request: Array
+(
+    [orderSumAmount] => 100000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T10:12:43.330+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T10:12:43.819+03:00
+    [depositNumber] => VLAEop1odwqZiasd5mfXEmiIqboZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T10:12:42.847+03:00
+    [sk] => u1cd1e26757485ecfa309aabc5644e7e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916101201_00000_64014
+    [unilabel] => 1f798c81-0009-5000-8000-00001511c2cf
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059930036
+    [invoiceId] => 2000000913962
+    [shopSumAmount] => 96500.00
+    [md5] => 9FA1A3967685C3E148AD33D676C520CC
+)
+
+[2016-09-25 03:12:43] String to md5: paymentAviso;100000.00;10643;1003;64014;2000000913962;testtesttest;Swr2ROOTjBv45aS
+[2016-09-25 03:12:43] Response: <?xml version="1.0" encoding="UTF-8"?><paymentAvisoResponse performedDatetime="2016-09-25T03:12:43.000-04:00" code="0"  invoiceId="2000000913962" shopId="64014"/>

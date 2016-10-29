@@ -1,0 +1,712 @@
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:01.953+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:05.514+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => DF7120D40227D66CBBC6A5DE0B1BA780
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:49:05.816+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T00:50:06.386+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:03:01.080+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:04:02.674+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:05:08.731+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:33:01.468+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:34:03.619+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T01:35:09.157+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:03:04.485+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:04:07.125+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:05:10.581+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:33:05.435+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:34:11.353+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T02:35:14.510+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:46:57.841+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:03:06.681+03:00
+    [depositNumber] => 99wilucCSVRcoOtYjTLPYSOLaLUZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:46:57.541+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004636_00000_64014
+    [unilabel] => 1f7907fb-0009-5000-8000-0000150fba86
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926627
+    [invoiceId] => 2000000913910
+    [shopSumAmount] => 965.00
+    [md5] => 22C153D42EA2C45D55478E286DF2E629
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:48:00.990+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:04:11.640+03:00
+    [depositNumber] => E0jrA88zS7bfQO41TqHBcqTJjDwZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:48:00.844+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004747_00000_64014
+    [unilabel] => 1f790840-0009-5000-8000-0000150fbd0b
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926797
+    [invoiceId] => 2000000913911
+    [shopSumAmount] => 965.00
+    [md5] => CF7C740B5BD7734144E9FD5674DA7982
+)
+##########################
+Array
+(
+    [orderSumAmount] => 1000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T00:49:05.512+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T03:05:14.708+03:00
+    [depositNumber] => O2AdaQsOPExxX9waYsT7lrSJhnsZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T00:49:05.435+03:00
+    [sk] => uffe9ea61014d8993b6fabac90789c708
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916004854_00000_64014
+    [unilabel] => 1f790885-0009-5000-8000-0000150fbeef
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059926868
+    [invoiceId] => 2000000913912
+    [shopSumAmount] => 965.00
+    [md5] => 959A456422122954417F7C066DCE14D1
+)
+##########################
+Array
+(
+    [orderSumAmount] => 100000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T10:12:43.114+03:00
+    [depositNumber] => VLAEop1odwqZiasd5mfXEmiIqboZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T10:12:42.847+03:00
+    [sk] => u1cd1e26757485ecfa309aabc5644e7e1
+    [action] => checkOrder
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916101201_00000_64014
+    [unilabel] => 1f798c81-0009-5000-8000-00001511c2cf
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059930036
+    [invoiceId] => 2000000913962
+    [shopSumAmount] => 96500.00
+    [md5] => C74D14B9A0C9E3BF5B2D85210C2EA0F4
+)
+##########################
+Array
+(
+    [orderSumAmount] => 100000.00
+    [cdd_exp_date] => 1118
+    [shopArticleId] => 347555
+    [paymentPayerCode] => 4100322062290
+    [paymentDatetime] => 2016-09-25T10:12:43.330+03:00
+    [cdd_rrn] => 
+    [external_id] => deposit
+    [paymentType] => AC
+    [requestDatetime] => 2016-09-25T10:12:43.819+03:00
+    [depositNumber] => VLAEop1odwqZiasd5mfXEmiIqboZ.001f.201609
+    [cps_user_country_code] => PL
+    [orderCreatedDatetime] => 2016-09-25T10:12:42.847+03:00
+    [sk] => u1cd1e26757485ecfa309aabc5644e7e1
+    [action] => paymentAviso
+    [shopId] => 64014
+    [scid] => 541865
+    [shopSumBankPaycash] => 1003
+    [shopSumCurrencyPaycash] => 10643
+    [rebillingOn] => false
+    [orderSumBankPaycash] => 1003
+    [cps_region_id] => 213
+    [orderSumCurrencyPaycash] => 10643
+    [merchant_order_id] => testtesttest_250916101201_00000_64014
+    [unilabel] => 1f798c81-0009-5000-8000-00001511c2cf
+    [cdd_pan_mask] => 444444|4448
+    [customerNumber] => testtesttest
+    [yandexPaymentId] => 2570059930036
+    [invoiceId] => 2000000913962
+    [shopSumAmount] => 96500.00
+    [md5] => 9FA1A3967685C3E148AD33D676C520CC
+)
