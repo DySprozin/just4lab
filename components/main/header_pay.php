@@ -1,5 +1,5 @@
 <?php
-  $meta['title'] = '';
+  $meta['title'] = 'Оплата заказа';
   $meta['description'] = '';
   $meta['keywords'] = '';
   $meta['css'] = '/css/common.css';

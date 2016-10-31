@@ -23,7 +23,11 @@ include ROOT . 'inc/header_common.htm';
  <tr>
   <td class="border_left_top">
    <div class="actual_title" id="actual_title">
-	<?php echo $topic_title; ?>
+	<?php 
+	 if ($is_shop)
+	  echo '<div style="float:left">'.$topic_title . '</div>' . '<div style="float:right"><a href="/pay.php?order" style="color:green">Оплатить счет</a>&nbsp;</div>'; 
+	 else echo $topic_title;
+	?>
    </div>
   </td>
   <?php if (!$is_shop) echo '<td class=" '.$main_css.'_right_top" style="width:1px">&nbsp;</td>'; ?>
