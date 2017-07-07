@@ -25,7 +25,7 @@ include ROOT . 'inc/header_common.htm';
    <div class="actual_title" id="actual_title">
 	<?php 
 	 if ($is_shop)
-	  echo '<div style="float:left">'.$topic_title . '</div>' . '<div style="float:right"><a href="/pay.php?order" style="color:green">Оплатить счет</a>&nbsp;</div>'; 
+	  echo '<div style="float:left">'.$topic_title . '</div>';
 	 else echo $topic_title;
 	?>
    </div>

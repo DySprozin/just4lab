@@ -18,7 +18,7 @@ function topic_index() {
  $posts = array();
  $idts = array();
  $f = 30;
- $link = mysql_query("SELECT * FROM `topics` WHERE `sticky`='0' AND `topic_status`!='2' AND `forum_id`='30' ORDER BY `topic_time` DESC");
+ $link = mysql_query("SELECT * FROM `topics` WHERE `sticky`='0' AND `topic_status`!='2' AND `forum_id`='30' ORDER BY `topic_time` DESC") or errLog($link);
  while($topic = mysql_fetch_assoc($link)) {
   $idts[] = $topic['topic_id'];
   $t_name[] = $topic['topic_title'];
