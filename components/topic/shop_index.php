@@ -46,7 +46,7 @@ if (isset($_GET['out'])) {
 if (!empty($_POST['login']) && !empty($_POST['password'])) {
  $login = $_POST['login'];
  $password = md5($_POST['password']);
- $link = mysqlQuery("SELECT * FROM users WHERE username='" . mysqli_real_escape_string($login) . "' AND user_password='" . mysqli_real_escape_string($password) . "';") or errDB();
+ $link = mysqlQuery("SELECT * FROM users WHERE username='" . mysqliRealEscapeString($login) . "' AND user_password='" . mysqliRealEscapeString($password) . "';") or errDB();
  $auth = mysqli_fetch_assoc($link);
  if (empty($auth['username'])) {
   $user = '';
@@ -63,7 +63,7 @@ if (!empty($_POST['login']) && !empty($_POST['password'])) {
 elseif (isset($_COOKIE['login']) && isset($_COOKIE['password'])) {
  $login = $_COOKIE['login'];
  $password = $_COOKIE['password'];
- $link = mysqlQuery("SELECT * FROM users WHERE username='" . mysqli_real_escape_string($login) . "' AND user_password='" . mysqli_real_escape_string($password) . "';") or errDB();
+ $link = mysqlQuery("SELECT * FROM users WHERE username='" . mysqliRealEscapeString($login) . "' AND user_password='" . mysqliRealEscapeString($password) . "';") or errDB();
  $auth = mysqli_fetch_assoc($link);
  if (empty($auth['username'])) {
   $user = '';
@@ -201,14 +201,14 @@ $main_css = "border";
    
    mysqlQuery("INSERT INTO `topics`
                (`topic_title`, `topic_poster_name`, `topic_time`, `topic_views`, `forum_id`, `topic_status`, `topic_last_post_id`, `posts_count`, `sticky`, `topic_last_post_time`, `topic_last_poster`, `shop_image`, `price`, `made`)
-               VALUES ('$theme_title', '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "', now(), '0', " . (int)$_GET['f'] . ", '0', '1', '0', '0', now(), '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "', '".$shopimage."', '".$price."', '".mysqli_real_escape_string($made)."');") or errDB($link);
+               VALUES ('$theme_title', '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "', now(), '0', " . (int)$_GET['f'] . ", '0', '1', '0', '0', now(), '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "', '".$shopimage."', '".$price."', '".mysqliRealEscapeString($made)."');") or errDB($link);
    $link = mysqlQuery ("SELECT * FROM `topics` ORDER BY `topic_id` DESC") or errDB($link);
    $tmp = mysqli_fetch_assoc($link);
    $tmp_topic = (int)$tmp['topic_id'];
 
    mysqlQuery("INSERT INTO `posts` 
                (`forum_id`, `topic_id`, `poster_name`, `post_text`, `post_time`, `poster_ip`, `post_status`) 
-                VALUES ('" . (int)$_GET['f'] . "', '" . (int)$tmp_topic . "', '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "', '" . mysqli_real_escape_string($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
+                VALUES ('" . (int)$_GET['f'] . "', '" . (int)$tmp_topic . "', '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "', '" . mysqliRealEscapeString($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
    $link = mysqlQuery ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)tmp_topic . "' ORDER BY `post_id` DESC") or errDB($link);
    $tmp = mysqli_fetch_assoc($link);
    mysqlQuery("UPDATE `forums` SET
@@ -221,7 +221,7 @@ $main_css = "border";
                 
    mysqlQuery("UPDATE `users` SET
                 `num_posts` = `num_posts` + 1
-                WHERE `username` = '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "';") or errDB($link);
+                WHERE `username` = '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "';") or errDB($link);
    
    
    
@@ -255,14 +255,14 @@ $main_css = "border";
 	$post_text = str_replace(array("\r", "\r\n"), '<br>', $post_text);
     mysqlQuery("INSERT INTO `posts` 
 	            (`forum_id`, `topic_id`, `poster_name`, `post_text`, `post_time`, `poster_ip`, `post_status`) 
-	             VALUES ('" . (int)$_GET['f'] . "', '" . (int)$_POST['topic'] . "', '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "', '" . mysqli_real_escape_string($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
+	             VALUES ('" . (int)$_GET['f'] . "', '" . (int)$_POST['topic'] . "', '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "', '" . mysqliRealEscapeString($post_text) . "', now(), '" . $GLOBALS['ip'] . "' , '0');") or errDB($link);
 	$link = mysqlQuery ("SELECT * FROM `posts` WHERE `forum_id`='" . (int)$_GET['f'] . "' AND `topic_id`='" . (int)$_POST['topic'] . "' ORDER BY `post_id` DESC") or errDB($link);
 	$tmp = mysqli_fetch_assoc($link);
 	mysqlQuery("UPDATE `topics` SET
                  `topic_last_post_id` = '" . (int)$tmp['post_id'] . "',
                  `posts_count` = `posts_count` + 1,
                  `topic_last_post_time` = now(),
-                 `topic_last_poster` = '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "'
+                 `topic_last_poster` = '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "'
                  WHERE `topic_id` = '" . (int)$_POST['topic'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
 	mysqlQuery("UPDATE `forums` SET
                  `posts_count` = `posts_count` + 1
@@ -270,7 +270,7 @@ $main_css = "border";
 				 
 	mysqlQuery("UPDATE `users` SET
                  `num_posts` = `num_posts` + 1
-                 WHERE `username` = '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "';") or errDB($link);
+                 WHERE `username` = '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "';") or errDB($link);
 	
 	Header('Location: ' . $_SERVER['HTTP_REFERER'] . '#comment_kva_box');
     exit();
@@ -296,7 +296,7 @@ $main_css = "border";
 				  `topic_last_poster` = '" . $tmp['poster_name'] . "' 
 				  WHERE `topic_id` = '" . (int)$_POST['topic'] . "' AND `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
     mysqlQuery ("UPDATE `forums` SET `posts_count` = `posts_count` - 1 WHERE `forum_id` = '" . (int)$_GET['f'] . "';") or errDB($link);
-    mysqlQuery ("UPDATE `users` SET `num_posts` = `num_posts` - 1 WHERE `username` = '" . mysqli_real_escape_string($f[$_GET['f']]->user) . "';") or errDB($link);
+    mysqlQuery ("UPDATE `users` SET `num_posts` = `num_posts` - 1 WHERE `username` = '" . mysqliRealEscapeString($f[$_GET['f']]->user) . "';") or errDB($link);
 	Header('Location: /shop/');
     exit();
 		
