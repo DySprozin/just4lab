@@ -28,7 +28,7 @@ function topic_f() {
 
  if ($page == 1) $topics = array_merge($stopics, $topics);
 
- echo '<table class="itemlist" id="itemlist" style="width:100%">';
+ echo '<div style="float:right; width:100px; padding-top:3px;"><a href="/pay.php?order"><span class="url"><input type="button" style="width:98px; padding-left:2px; cursor: pointer;" value="Оплатить счет"> </span><br><img border="0" src="/img/bill.png" style="margin-top:10px;"></a></div><div style="float:left; width:88%;"><table class="itemlist" id="itemlist" style="width:100%">';
  echo '
  <tr>
 <th>Наименование / Характеристики</th>
@@ -58,7 +58,7 @@ function topic_f() {
 	include ROOT . 'inc/topic/shop_list.htm';
  } 
  
- echo '</table><br><div align="right">' . $GLOBALS['topic_pages'] . '</div>';
+ echo '</table></div><br><div align="right">' . $GLOBALS['topic_pages'] . '</div>';
  
 }
 
