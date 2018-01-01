@@ -3,9 +3,9 @@
 include_once ROOT . 'Cls/Cls_Topic.php';
 include_once ROOT . 'components/topic/index.php';
 
- $link = mysql_query("SELECT * FROM `posts` WHERE `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_time`;") or errDB($link);
+ $link = mysqlQuery("SELECT * FROM `posts` WHERE `topic_id`='" . (int)$_GET['t'] . "' ORDER BY `post_time`;") or errDB($link);
  $tmp = 0;
- while ($post = mysql_fetch_assoc($link)) {
+ while ($post = mysqli_fetch_assoc($link)) {
   if ($tmp++ == 0) continue;
    $post_time = post_time($post['post_time']);
   echo '<div class="comment_kva_box"><div class="avatar" align="right"><div>' . $post['poster_name'] . '</div><div class="vgroup"></div>'

@@ -21,10 +21,10 @@ function topic_s() {
   
   require_once (ROOT . "conf/sphinxapi.php");
   
-  mysql_connect($DBhost, $DBusr, $DBpwd);
-  mysql_select_db($DBname);
-  mysql_query('SET NAMES utf8');
-  mysql_query('SET CHARACTER SET utf8');
+  mysqli_connect($DBhost, $DBusr, $DBpwd);
+  mysqli_select_db($DBname);
+  mysqlQuery('SET NAMES utf8');
+  mysqlQuery('SET CHARACTER SET utf8');
   
   $stext = $_POST['searchtext'];
   
@@ -44,8 +44,8 @@ function topic_s() {
     $ids = array_keys($result['matches']);
     $id_list = implode(',', $ids);
     $sql = 'SELECT * FROM `topics` WHERE `topic_id` IN (' . $id_list . ')';
-    $resource = mysql_query($sql);
-    while ($result = mysql_fetch_assoc($resource)) {
+    $resource = mysqlQuery($sql);
+    while ($result = mysqli_fetch_assoc($resource)) {
      if (!strpbrk($f[$result['forum_id']]->get_chmods(), 'rED')) continue;
      $light = $sphinx->BuildExcerpts(array(strip_tags($result['topic_title'], "<br>")), 'topic_title', $stext, array('around' => 5, "chunk_separator" => ' &lt...&gt; '));
 
@@ -75,11 +75,11 @@ function topic_s() {
     $ids = array_keys($result['matches']);
     $id_list = implode(',', $ids);
     $sql = 'SELECT * FROM `posts` WHERE `post_id` IN (' . $id_list . ')';
-    $resource = mysql_query($sql);
-    while ($result = mysql_fetch_assoc($resource)) {
+    $resource = mysqlQuery($sql);
+    while ($result = mysqli_fetch_assoc($resource)) {
      if (!strpbrk($f[$result['forum_id']]->get_chmods(), 'rED')) continue;
-     $link = mysql_query('SELECT * from topics WHERE topic_id="' . $result['topic_id'] . '";');
-     $topic = mysql_fetch_assoc($link);
+     $link = mysqlQuery('SELECT * from topics WHERE topic_id="' . $result['topic_id'] . '";');
+     $topic = mysqli_fetch_assoc($link);
 
      $light = $sphinx->BuildExcerpts(array(strip_tags($result['post_text'], "<br>")), 'adw0rd_wp', $stext, array('around' => 10, "chunk_separator" => '<br>&lt;...&gt; '));
      foreach ($light as $value) {

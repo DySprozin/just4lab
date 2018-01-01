@@ -8,10 +8,10 @@ function topic_index_comments() {
  $posts = array();
  $idts = array();
  $f = 30;
- $link = mysql_query("SELECT * FROM `posts` WHERE `forum_id`='$f' ORDER BY `post_id` DESC") or errDB($link);
- while($post = mysql_fetch_assoc($link)) {
-  $link2 = mysql_query("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$post['topic_id'] . "'") or errDB($link);
-  $post2 = mysql_fetch_assoc($link2);
+ $link = mysqlQuery("SELECT * FROM `posts` WHERE `forum_id`='$f' ORDER BY `post_id` DESC") or errDB($link);
+ while($post = mysqli_fetch_assoc($link)) {
+  $link2 = mysqlQuery("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$post['topic_id'] . "'") or errDB($link);
+  $post2 = mysqli_fetch_assoc($link2);
   if ($post2 ['posts_count'] ==0 || $post2['topic_status'] == 2 || in_array($post['topic_id'], $idts)) continue;
 
   $idts[] = $post['topic_id'];

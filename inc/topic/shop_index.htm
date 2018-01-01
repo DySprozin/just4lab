@@ -4,7 +4,7 @@
 <?php
 
 function topic_index() {
- $link = mysql_query("SELECT * FROM `posts` WHERE `post_status`!='3' AND `forum_id`!='30' AND `forum_id`!='255' ORDER BY `post_time` DESC") or errDB($link);
+ $link = mysqlQuery("SELECT * FROM `posts` WHERE `post_status`!='3' AND `forum_id`!='30' AND `forum_id`!='255' ORDER BY `post_time` DESC") or errDB($link);
  $ch = 0;
  $posts = array();
  $idts = array();
@@ -12,12 +12,12 @@ function topic_index() {
  
  while ($ch < $GLOBALS['num_main_posts']) {
 
-  $post = mysql_fetch_assoc($link);
+  $post = mysqli_fetch_assoc($link);
   $idf = $post['forum_id'];
   $idt = $post['topic_id'];
-  $linkt = mysql_query("SELECT * FROM `topics` WHERE `topic_id`=" . (int)$idt) or errDB($link);
+  $linkt = mysqlQuery("SELECT * FROM `topics` WHERE `topic_id`=" . (int)$idt) or errDB($link);
   
-  $topic = mysql_fetch_assoc($linkt);
+  $topic = mysqli_fetch_assoc($linkt);
 if (!$topic) break;
   if (mb_strlen(trim(strip_tags($post['post_text']), "\x00..\x1F"), "utf-8") < $GLOBALS['maxlen_main_posts'] ||
      !strpbrk($f[$idf]->get_chmods(), 'rED') ||

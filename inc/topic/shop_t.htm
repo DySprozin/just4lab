@@ -20,22 +20,22 @@ function topic_t() {
  
  
  $lstart = ($page - 1) * $p_t;
- $link = mysql_query("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$t . "';") or errDB($link);
- $topic = mysql_fetch_assoc($link);
+ $link = mysqlQuery("SELECT * FROM `topics` WHERE `topic_id`='" . (int)$t . "';") or errDB($link);
+ $topic = mysqli_fetch_assoc($link);
  $title = $topic['topic_title'];
 
 //post_status=1 => первый пост
 //post_status=2 => первый пост всегда видно полностью
 //post_status=3 => пост не по теме !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- $link1 = mysql_query("SELECT * FROM `posts` WHERE (`post_status`='1' OR `post_status`='2') AND `topic_id`='" . (int)$t . "';") or errDB($link);
- $link = mysql_query("SELECT * FROM `posts` WHERE `post_status`!='1' AND `post_status`!='2' AND `post_status`!='3' AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC;") or errDB($link);
- $post1 = mysql_fetch_assoc($link1);
- if (empty ($post1)) $post1 = mysql_fetch_assoc($link);
+ $link1 = mysqlQuery("SELECT * FROM `posts` WHERE (`post_status`='1' OR `post_status`='2') AND `topic_id`='" . (int)$t . "';") or errDB($link);
+ $link = mysqlQuery("SELECT * FROM `posts` WHERE `post_status`!='1' AND `post_status`!='2' AND `post_status`!='3' AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC;") or errDB($link);
+ $post1 = mysqli_fetch_assoc($link1);
+ if (empty ($post1)) $post1 = mysqli_fetch_assoc($link);
  if (empty ($post1)) {
   echo "Ложки нет. Этой темы нет. Ничего нет. Все тлен. ЖПНР! =)";
   return;
  }
- $link = mysql_query("SELECT * FROM `posts` WHERE `post_id`!=" . (int)$post1['post_id'] . " AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC LIMIT " . $lstart . "," . $p_t . ";") or errDB($link);
+ $link = mysqlQuery("SELECT * FROM `posts` WHERE `post_id`!=" . (int)$post1['post_id'] . " AND `topic_id`='" . (int)$t . "' ORDER BY `post_time` ASC LIMIT " . $lstart . "," . $p_t . ";") or errDB($link);
 
  //post_status=1 => первый пост
  $post_status = $post1['post_status'];
@@ -65,7 +65,7 @@ require_once ROOT . 'inc/topic/shop_t_body.htm';
  $footer_kva = '<div>&nbsp;</div>';
  
 
- while ($post = mysql_fetch_assoc($link)) {
+ while ($post = mysqli_fetch_assoc($link)) {
   //Пока все скрытые сообщения скрываем (выше - тоже)
   while(preg_match("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$][\r\n]*/is",$post['post_text'])){
    $post['post_text']=preg_replace_callback("/[\$]hide[\$][\r\n]*(.+?)[\$]\/hide[\$]/is", "base64r_decode_off", $post['post_text']);

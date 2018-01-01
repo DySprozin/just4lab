@@ -18,12 +18,12 @@ function topic_index() {
  $posts = array();
  $idts = array();
  $f = 30;
- $link = mysql_query("SELECT * FROM `topics` WHERE `sticky`='0' AND `topic_status`!='2' AND `forum_id`='30' ORDER BY `topic_time` DESC");
- while($topic = mysql_fetch_assoc($link)) {
+ $link = mysqlQuery("SELECT * FROM `topics` WHERE `sticky`='0' AND `topic_status`!='2' AND `forum_id`='30' ORDER BY `topic_time` DESC");
+ while($topic = mysqli_fetch_assoc($link)) {
   $idts[] = $topic['topic_id'];
   $t_name[] = $topic['topic_title'];
-  $link_post = mysql_query("SELECT * FROM `posts` WHERE `topic_id` = '". $topic['topic_id'] ."' ORDER BY `post_time`");
-  $lpost = mysql_fetch_assoc($link_post);
+  $link_post = mysqlQuery("SELECT * FROM `posts` WHERE `topic_id` = '". $topic['topic_id'] ."' ORDER BY `post_time`");
+  $lpost = mysqli_fetch_assoc($link_post);
   $posts[] = $lpost['post_text'];
   $posters[] = $lpost['poster_name'];
   
